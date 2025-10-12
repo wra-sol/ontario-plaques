@@ -1,0 +1,29 @@
+[
+  {
+    "id": "0001",
+    "title": "Fort York",
+    "municipality": "Toronto",
+    "latitude": 43.6370,
+    "longitude": -79.4062,
+    "summary": "Key defensive site during the War of 1812.",
+    "year": 1934
+  },
+  {
+    "id": "0002",
+    "title": "Rideau Canal",
+    "municipality": "Ottawa",
+    "latitude": 45.4245,
+    "longitude": -75.6950,
+    "summary": "19th-century canal linking Ottawa to Lake Ontario.",
+    "year": 1925
+  },
+  {
+    "id": "0003",
+    "title": "Niagara Falls Hydro",
+    "municipality": "Niagara Falls",
+    "latitude": 43.0896,
+    "longitude": -79.0849,
+    "summary": "Pioneering hydroelectric power development at Niagara Falls.",
+    "year": 1950
+  }
+]
