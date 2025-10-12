@@ -1,0 +1,53 @@
+/* Base theme: light gray, white, Kelly green, dark gray; no rounding */
+:root {
+  --green: #198f3a; /* Kelly-ish green */
+  --dark: #222222; /* dark gray */
+  --mid: #757575;  /* medium gray */
+  --light: #f2f2f2; /* light gray */
+  --white: #ffffff;
+  --gap: 8px; /* tight spacing */
+}
+
+* { box-sizing: border-box; }
+html, body, #root { height: 100%; }
+body {
+  margin: 0;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  color: var(--dark);
+  background: var(--light);
+}
+
+/* Layout */
+.container { max-width: 1040px; margin: 0 auto; padding: 0 16px; }
+.header {
+  border-bottom: 3px solid var(--dark);
+  background: var(--white);
+}
+.header-inner { display: grid; grid-template-columns: 1fr auto; align-items: center; gap: var(--gap); }
+.brand { display: inline-block; padding: 16px 0; color: var(--dark); text-decoration: none; font-weight: 700; letter-spacing: 0.5px; }
+.brand strong { color: var(--green); }
+
+.nav { display: flex; gap: 16px; }
+.nav a { color: var(--dark); text-decoration: none; padding: 16px 0; border-bottom: 3px solid transparent; }
+.nav a.active { border-color: var(--green); color: var(--green); }
+
+.main { padding: 24px 0; }
+
+/* Cards and lists - hard lines, no rounding */
+.card { background: var(--white); border: 3px solid var(--dark); padding: 16px; }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 16px; }
+.list { display: grid; gap: 8px; }
+.row { display: grid; grid-template-columns: 120px 1fr; gap: 8px; }
+
+/* Typography */
+h1, h2, h3 { margin: 0 0 8px; line-height: 1.15; }
+p { margin: 0 0 8px; }
+.small { color: var(--mid); font-size: 12px; }
+
+/* Buttons and inputs - square */
+.button { background: var(--green); color: var(--white); border: 0; padding: 10px 12px; cursor: pointer; text-transform: uppercase; letter-spacing: 1px; }
+.button.secondary { background: var(--dark); }
+.input { border: 3px solid var(--dark); background: var(--white); padding: 8px 10px; width: 100%; }
+
+/* Footer */
+.footer { border-top: 3px solid var(--dark); background: var(--white); color: var(--mid); padding: 16px 0; }
