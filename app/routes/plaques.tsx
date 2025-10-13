@@ -1,4 +1,6 @@
 import { Link, Form, useLoaderData, useSearchParams, useSubmit } from 'react-router-dom';
+import type { MetaFunction } from 'react-router';
+import { buildMeta } from '../lib/seo';
 import type { ReactNode } from 'react';
 import { fetchPlaques, type Plaque } from '../lib/plaques';
 import { Card, Box, Button, Tag, Grid, Stack, Input, ComboBox, Image, Text } from '../components';
@@ -553,3 +555,16 @@ export default function PlaquesRoute() {
     </section>
   );
 }
+
+export const meta: MetaFunction<typeof loader> = ({ location, data }) => {
+  const q = data?.q ?? '';
+  const title = q ? `Search: ${q}` : 'All Plaques';
+  const description = q
+    ? `Search results for "${q}" across Ontario historical plaques.`
+    : 'Browse all Ontario historical plaques by title, location, and topic.';
+  return buildMeta({
+    title,
+    description,
+    pathname: location.pathname + location.search,
+  });
+};

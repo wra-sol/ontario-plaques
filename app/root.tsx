@@ -7,6 +7,8 @@ import {
   ScrollRestoration, 
   useLoaderData 
 } from 'react-router';
+import type { MetaFunction } from 'react-router';
+import { buildMeta, SITE_NAME, DEFAULT_DESCRIPTION } from './lib/seo';
 import type { LoaderFunctionArgs } from 'react-router';
 import { Nav, Footer } from './components';
 import { getTheme, type Theme } from './lib/theme';
@@ -81,7 +83,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>Ontario Historical Plaques</title>
+        {/* Title is provided via route meta */}
         <Meta />
         <style dangerouslySetInnerHTML={{ __html: `
           .no-transitions,
@@ -119,4 +121,13 @@ export default function Root() {
     </div>
   );
 }
+
+export const meta: MetaFunction = ({ location }) => {
+  return buildMeta({
+    title: SITE_NAME,
+    description: DEFAULT_DESCRIPTION,
+    pathname: location.pathname,
+    type: 'website',
+  });
+};
 

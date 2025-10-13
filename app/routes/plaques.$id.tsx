@@ -1,4 +1,6 @@
 import { Link, useLoaderData } from "react-router-dom";
+import type { MetaFunction } from 'react-router';
+import { buildMeta } from '../lib/seo';
 import { fetchPlaques, type Plaque } from "../lib/plaques";
 import { Card, Box, Button, Tag, Stack, Image, Text } from "../components";
 
@@ -178,3 +180,17 @@ export default function PlaqueDetailRoute() {
     </Card>
   );
 }
+
+export const meta: MetaFunction<typeof loader> = ({ data, location }) => {
+  const p = data;
+  const description = p?.shortSummary || p?.plaqueText?.slice(0, 200);
+  const imageUrl = p?.shareImage || p?.photos?.[0]?.src || p?.imageUrl;
+  return buildMeta({
+    title: p?.title,
+    description: description || 'Ontario historical plaque details',
+    pathname: location.pathname,
+    type: 'article',
+    imageUrl,
+    imageAlt: p?.title,
+  });
+};

@@ -1,4 +1,6 @@
 import { Card, Box, Text, Stack } from "../components";
+import type { MetaFunction } from 'react-router';
+import { buildMeta } from '../lib/seo';
 
 export default function About() {
   return (
@@ -60,3 +62,11 @@ export default function About() {
     </Card>
   );
 }
+
+export const meta: MetaFunction = ({ location }) => {
+  return buildMeta({
+    title: 'About',
+    description: 'About the Ontario Historical Plaques project and data sources.',
+    pathname: location.pathname,
+  });
+};
