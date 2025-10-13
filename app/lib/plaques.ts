@@ -74,6 +74,6 @@ export async function fetchPlaques(): Promise<Plaque[]> {
     // ignore, fall back
   }
   // Fallback to bundled sample
-  const sample = (await import('../../src/data/plaques.json')).default as any[];
+  const sample = (await import('../data/plaques.json')).default as any[];
   return sample.map(s => normalizePlaque(s as RawPlaque)).filter(Boolean) as Plaque[];
 }

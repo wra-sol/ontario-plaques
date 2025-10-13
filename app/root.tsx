@@ -1,5 +1,5 @@
 import { Links, Meta, Outlet, Scripts, ScrollRestoration } from 'react-router-dom';
-import '../src/styles.css';
+import './styles.css';
 
 export function Layout({ children }: { children: React.ReactNode }) {
   return (
