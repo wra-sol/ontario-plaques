@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link, NavLink, Outlet, ScrollRestoration } from 'react-router-dom';
-import './styles.css';
 
 export default function Root() {
   return (
