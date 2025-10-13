@@ -30,7 +30,7 @@ if (rootElement && rootElement.hasChildNodes()) {
   // SSR mode: hydrate the existing server-rendered content
   startTransition(() => {
     hydrateRoot(
-      document,
+      rootElement,
       <StrictMode>
         <RouterProvider router={router} />
       </StrictMode>
