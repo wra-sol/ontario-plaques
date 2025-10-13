@@ -7,6 +7,8 @@ import {
   ScrollRestoration, 
   useLoaderData 
 } from 'react-router';
+import type { MetaFunction } from 'react-router';
+import { buildMeta, SITE_NAME, DEFAULT_DESCRIPTION } from './lib/seo';
 import type { LoaderFunctionArgs } from 'react-router';
 import { Nav, Footer } from './components';
 import { getTheme, type Theme } from './lib/theme';
@@ -120,4 +122,13 @@ export default function Root() {
     </div>
   );
 }
+
+export const meta: MetaFunction = ({ location }) => {
+  return buildMeta({
+    title: SITE_NAME,
+    description: DEFAULT_DESCRIPTION,
+    pathname: location.pathname,
+    type: 'website',
+  });
+};
 

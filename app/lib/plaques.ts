@@ -74,6 +74,7 @@ export type Plaque = {
   titleSortKey: string;
   shortSummary?: string;
   hasPhoto?: boolean;
+  shareImage?: string;
 };
 
 function coerceNumber(value: unknown): number | undefined {
@@ -232,6 +233,7 @@ export function normalizePlaque(raw: RawPlaque): Plaque | null {
     imageUrl,
     sourceUrl,
     photos: raw.photos,
+    shareImage: raw.map_image || imageUrl,
     relatedLinks: raw.related_links,
     subjectLinks: raw.subject_links,
     locationHierarchy: raw.location_hierarchy,
