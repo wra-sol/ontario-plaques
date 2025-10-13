@@ -1,4 +1,4 @@
-name = "ontario-historical-plaques"
+name = "ontario-plaques"
 main = "worker.js"
 compatibility_date = "2024-10-01"
 assets = { directory = "dist/client", binding = "ASSETS" }
