@@ -1,6 +1,20 @@
+export type Photo = {
+  src: string;
+  alt?: string;
+  caption?: string;
+  width?: number;
+  height?: number;
+};
+
+export type Link = {
+  title: string;
+  url: string;
+};
+
 export type RawPlaque = {
   id: string | number;
   title: string;
+  // Legacy fields
   municipality?: string;
   city?: string;
   lat?: number;
@@ -16,6 +30,21 @@ export type RawPlaque = {
   tags?: string[];
   image_url?: string;
   source_url?: string;
+  // New fields from ontarioplaques.com
+  url?: string;
+  canonical_url?: string;
+  meta_description?: string;
+  location_text?: string;
+  location_hierarchy?: string[];
+  coordinates_text?: string;
+  map_image?: string;
+  related_links?: Link[];
+  subject_links?: Link[];
+  more_links?: Link[];
+  location_directory_links?: Link[];
+  photos?: Photo[];
+  source_directories?: string[];
+  scraped_at?: string;
 };
 
 export type Plaque = {
@@ -24,13 +53,19 @@ export type Plaque = {
   municipality: string;
   latitude: number;
   longitude: number;
-  summary: string;
+  plaqueText: string;
+  locationText?: string;
+  coordinatesText?: string;
   year?: number;
   address?: string;
   region?: string;
   tags?: string[];
   imageUrl?: string;
   sourceUrl?: string;
+  photos?: Photo[];
+  relatedLinks?: Link[];
+  subjectLinks?: Link[];
+  locationHierarchy?: string[];
 };
 
 function coerceNumber(value: unknown): number | undefined {
@@ -45,19 +80,51 @@ export function normalizePlaque(raw: RawPlaque): Plaque | null {
   const title = (raw.title ?? '').trim();
   const id = String(raw.id ?? title).trim();
   if (!id || !title || latitude == null || longitude == null) return null;
+  
+  // Extract municipality from location_hierarchy or fallback to legacy fields
+  const municipality = (
+    raw.location_hierarchy?.[0] ?? 
+    raw.municipality ?? 
+    raw.city ?? 
+    ''
+  ).trim();
+  
+  // Get primary image from photos array or legacy image_url
+  const imageUrl = raw.photos?.[0]?.src ?? raw.image_url;
+  
+  // Get the actual plaque text (not the short meta_description)
+  const plaqueText = (
+    raw.plaque_text ?? 
+    raw.summary ?? 
+    raw.meta_description ?? 
+    ''
+  ).trim();
+  
+  // Extract tags from subject_links or use legacy tags
+  const tags = raw.subject_links?.map(link => link.title) ?? raw.tags;
+  
+  // Get source URL
+  const sourceUrl = raw.canonical_url ?? raw.url ?? raw.source_url;
+  
   return {
     id,
     title,
-    municipality: (raw.municipality ?? raw.city ?? '').trim(),
+    municipality,
     latitude,
     longitude,
-    summary: (raw.summary ?? raw.plaque_text ?? '').trim(),
+    plaqueText,
+    locationText: raw.location_text,
+    coordinatesText: raw.coordinates_text,
     year: raw.year,
     address: raw.address,
     region: raw.region,
-    tags: raw.tags,
-    imageUrl: raw.image_url,
-    sourceUrl: raw.source_url,
+    tags,
+    imageUrl,
+    sourceUrl,
+    photos: raw.photos,
+    relatedLinks: raw.related_links,
+    subjectLinks: raw.subject_links,
+    locationHierarchy: raw.location_hierarchy,
   };
 }
 
