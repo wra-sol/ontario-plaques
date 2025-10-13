@@ -127,7 +127,7 @@ export async function loader({ request }: { request: Request }) {
   const pageSizeParam = parseInt(url.searchParams.get('pageSize') ?? '24', 10);
   const pageSize = Number.isFinite(pageSizeParam) && pageSizeParam > 0 ? Math.min(Math.max(pageSizeParam, 6), 96) : 24;
   
-  const plaques = await fetchPlaques();
+  const plaques = await fetchPlaques(request);
   
   // Apply filters
   let filtered = plaques;
@@ -562,9 +562,16 @@ export const meta: MetaFunction<typeof loader> = ({ location, data }) => {
   const description = q
     ? `Search results for "${q}" across Ontario historical plaques.`
     : 'Browse all Ontario historical plaques by title, location, and topic.';
+  
+  // Use the first plaque's image as the OG image
+  const firstPlaque = data?.plaques?.[0];
+  const imageUrl = firstPlaque?.shareImage || firstPlaque?.imageUrl || firstPlaque?.photos?.[0]?.src;
+  
   return buildMeta({
     title,
     description,
     pathname: location.pathname + location.search,
+    imageUrl,
+    imageAlt: firstPlaque?.title,
   });
 };
