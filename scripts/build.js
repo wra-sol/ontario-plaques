@@ -1,4 +1,4 @@
-import { cpSync, mkdirSync } from 'fs';
+import { cpSync, mkdirSync, writeFileSync } from 'fs';
 import { fileURLToPath } from 'url';
 import { dirname, join } from 'path';
 
@@ -13,6 +13,15 @@ try {
   console.log('✓ Copied worker.js to dist/client/_worker.js');
 } catch (error) {
   console.error('Error copying worker file:', error);
+  process.exit(1);
+}
+
+// Ensure _worker.js is not uploaded as a static asset during Pages deploys
+try {
+  writeFileSync(join(root, 'dist/client/.assetsignore'), '_worker.js\n');
+  console.log('✓ Wrote dist/client/.assetsignore to ignore _worker.js');
+} catch (error) {
+  console.error('Error writing .assetsignore:', error);
   process.exit(1);
 }
 
