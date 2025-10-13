@@ -1,0 +1,997 @@
+
+=== DUPLICATE ANALYSIS ===
+Total plaques: 1506
+Duplicate titles: 35
+Total duplicate plaques: 92
+
+=== DUPLICATES BY TITLE ===
+
+
+================================================================================
+TITLE: null
+Count: 7 plaques
+================================================================================
+
+[1] ID: Plaque_Brant19
+URL: https://www.ontarioplaques.com/Plaques/Plaque_Brant19.html
+Location: N/A
+Coordinates: N/A
+Plaque Text (first 200 chars):
+  N/A
+
+[2] ID: Plaque_Hamilton30
+URL: https://www.ontarioplaques.com/Plaques/Plaque_Hamilton30.html
+Location: N/A
+Coordinates: N/A
+Plaque Text (first 200 chars):
+  N/A
+
+[3] ID: Plaque_Hastings06
+URL: https://www.ontarioplaques.com/Plaques/Plaque_Hastings06.html
+Location: The County of Hastings The City of Belleville In front of the church on the northwest corner of Bridge Street East and Church Street
+Coordinates: Coordinates: N 44 09.871 W 77 22.879
+Plaque Text (first 200 chars):
+  The largest Protestant denomination in Canada during the late 19th and early 20th centuries, the Methodist Church (Canada, Newfoundland, Bermuda) was established in 1884. Its formation marked the culm...
+
+[4] ID: Plaque_Leeds16
+URL: https://www.ontarioplaques.com/Plaques/Plaque_Leeds16.html
+Location: N/A
+Coordinates: N/A
+Plaque Text (first 200 chars):
+  N/A
+
+[5] ID: Plaque_Leeds36
+URL: https://www.ontarioplaques.com/Plaques/Plaque_Leeds36.html
+Location: N/A
+Coordinates: N/A
+Plaque Text (first 200 chars):
+  N/A
+
+[6] ID: Plaque_Niagara36
+URL: https://www.ontarioplaques.com/Plaques/Plaque_Niagara36.html
+Location: N/A
+Coordinates: N/A
+Plaque Text (first 200 chars):
+  N/A
+
+[7] ID: Plaque_York16
+URL: https://www.ontarioplaques.com/Plaques/Plaque_York16.html
+Location: The Region of York The Town of Newmarket In front of the Meeting House at 17030 Yonge Street on the west side, just south of Eagle Street
+Coordinates: Coordinates: N 44 02.559 W 79 28.682
+Plaque Text (first 200 chars):
+  In 1800 an extensive grant of land in this vicinity was made to Timothy Rogers and Samuel Lundy who, with other members of the Religious Society of Friends (Quakers), settled here in 1801-1803. Origin...
+
+📍 Unique locations: 3
+📍 Unique coordinates: 3
+ℹ️  DIFFERENT LOCATIONS - These are plaques about the same subject in different places
+
+================================================================================
+TITLE: Saint-Louis-de-Gonzague School
+Count: 4 plaques
+================================================================================
+
+[1] ID: HeritageTrust_saint-louis-de-gonzague-school
+URL: https://www.heritagetrust.on.ca/plaques/saint-louis-de-gonzague-school
+Location: N/A
+Coordinates: N/A
+Plaque Text (first 200 chars):
+  The protection of language and education rights has been an ongoing struggle in Franco-Ontarian history. Regulation 17 (1912-27) forbade teaching in French in Ontario's primary schools beyond Grade 2....
+
+[2] ID: HeritageTrust_saint-louis-de-gonzague-school
+URL: https://www.heritagetrust.on.ca/plaques/saint-louis-de-gonzague-school
+Location: N/A
+Coordinates: N/A
+Plaque Text (first 200 chars):
+  The protection of language and education rights has been an ongoing struggle in Franco-Ontarian history. Regulation 17 (1912-27) forbade teaching in French in Ontario's primary schools beyond Grade 2....
+
+[3] ID: HeritageTrust_saint-louis-de-gonzague-school
+URL: https://www.heritagetrust.on.ca/plaques/saint-louis-de-gonzague-school
+Location: N/A
+Coordinates: N/A
+Plaque Text (first 200 chars):
+  The protection of language and education rights has been an ongoing struggle in Franco-Ontarian history. Regulation 17 (1912-27) forbade teaching in French in Ontario's primary schools beyond Grade 2....
+
+[4] ID: HeritageTrust_saint-louis-de-gonzague-school
+URL: https://www.heritagetrust.on.ca/plaques/saint-louis-de-gonzague-school
+Location: N/A
+Coordinates: N/A
+Plaque Text (first 200 chars):
+  The protection of language and education rights has been an ongoing struggle in Franco-Ontarian history. Regulation 17 (1912-27) forbade teaching in French in Ontario's primary schools beyond Grade 2....
+
+📍 Unique locations: 1
+📍 Unique coordinates: 1
+⚠️  SAME LOCATION - These are multiple plaques at the same spot
+
+================================================================================
+TITLE: Frederic Baraga 1797-1868
+Count: 4 plaques
+================================================================================
+
+[1] ID: HeritageTrust_frederic-baraga
+URL: https://www.heritagetrust.on.ca/plaques/frederic-baraga
+Location: N/A
+Coordinates: N/A
+Plaque Text (first 200 chars):
+  A pioneer missionary in northwestern Ontario, Baraga was born near Dobrni (Yugoslavia) and ordained a Roman Catholic priest in 1823. Seven years later he came to the United States as the first mission...
+
+[2] ID: HeritageTrust_frederic-baraga
+URL: https://www.heritagetrust.on.ca/plaques/frederic-baraga
+Location: N/A
+Coordinates: N/A
+Plaque Text (first 200 chars):
+  A pioneer missionary in northwestern Ontario, Baraga was born near Dobrni (Yugoslavia) and ordained a Roman Catholic priest in 1823. Seven years later he came to the United States as the first mission...
+
+[3] ID: HeritageTrust_frederic-baraga
+URL: https://www.heritagetrust.on.ca/plaques/frederic-baraga
+Location: N/A
+Coordinates: N/A
+Plaque Text (first 200 chars):
+  A pioneer missionary in northwestern Ontario, Baraga was born near Dobrni (Yugoslavia) and ordained a Roman Catholic priest in 1823. Seven years later he came to the United States as the first mission...
+
+[4] ID: HeritageTrust_frederic-baraga
+URL: https://www.heritagetrust.on.ca/plaques/frederic-baraga
+Location: N/A
+Coordinates: N/A
+Plaque Text (first 200 chars):
+  A pioneer missionary in northwestern Ontario, Baraga was born near Dobrni (Yugoslavia) and ordained a Roman Catholic priest in 1823. Seven years later he came to the United States as the first mission...
+
+📍 Unique locations: 1
+📍 Unique coordinates: 1
+⚠️  SAME LOCATION - These are multiple plaques at the same spot
+
+================================================================================
+TITLE: Montreal River Alternative Service Work Camp
+Count: 4 plaques
+================================================================================
+
+[1] ID: HeritageTrust_montreal-river-alternative-service-work-camp
+URL: https://www.heritagetrust.on.ca/plaques/montreal-river-alternative-service-work-camp
+Location: N/A
+Coordinates: N/A
+Plaque Text (first 200 chars):
+  When Canada introduced wartime conscription in 1940, many young men — largely of Mennonite and other historic peace churches — sought alternatives to military service based on religious conviction and...
+
+[2] ID: HeritageTrust_montreal-river-alternative-service-work-camp
+URL: https://www.heritagetrust.on.ca/plaques/montreal-river-alternative-service-work-camp
+Location: N/A
+Coordinates: N/A
+Plaque Text (first 200 chars):
+  When Canada introduced wartime conscription in 1940, many young men — largely of Mennonite and other historic peace churches — sought alternatives to military service based on religious conviction and...
+
+[3] ID: HeritageTrust_montreal-river-alternative-service-work-camp
+URL: https://www.heritagetrust.on.ca/plaques/montreal-river-alternative-service-work-camp
+Location: N/A
+Coordinates: N/A
+Plaque Text (first 200 chars):
+  When Canada introduced wartime conscription in 1940, many young men — largely of Mennonite and other historic peace churches — sought alternatives to military service based on religious conviction and...
+
+[4] ID: HeritageTrust_montreal-river-alternative-service-work-camp
+URL: https://www.heritagetrust.on.ca/plaques/montreal-river-alternative-service-work-camp
+Location: N/A
+Coordinates: N/A
+Plaque Text (first 200 chars):
+  When Canada introduced wartime conscription in 1940, many young men — largely of Mennonite and other historic peace churches — sought alternatives to military service based on religious conviction and...
+
+📍 Unique locations: 1
+📍 Unique coordinates: 1
+⚠️  SAME LOCATION - These are multiple plaques at the same spot
+
+================================================================================
+TITLE: De Troyes Expedition 1686
+Count: 4 plaques
+================================================================================
+
+[1] ID: HeritageTrust_de-troyes-expedition
+URL: https://www.heritagetrust.on.ca/plaques/de-troyes-expedition
+Location: N/A
+Coordinates: N/A
+Plaque Text (first 200 chars):
+  In March 1686, the Governor of New France, intent on protecting his colony's fur trade interests, sent an expedition from Montreal under command of Pierre Chevalier de Troyes to attack the Hudson's Ba...
+
+[2] ID: HeritageTrust_de-troyes-expedition
+URL: https://www.heritagetrust.on.ca/plaques/de-troyes-expedition
+Location: N/A
+Coordinates: N/A
+Plaque Text (first 200 chars):
+  In March 1686, the Governor of New France, intent on protecting his colony's fur trade interests, sent an expedition from Montreal under command of Pierre Chevalier de Troyes to attack the Hudson's Ba...
+
+[3] ID: HeritageTrust_de-troyes-expedition
+URL: https://www.heritagetrust.on.ca/plaques/de-troyes-expedition
+Location: N/A
+Coordinates: N/A
+Plaque Text (first 200 chars):
+  In March 1686, the Governor of New France, intent on protecting his colony's fur trade interests, sent an expedition from Montreal under command of Pierre Chevalier de Troyes to attack the Hudson's Ba...
+
+[4] ID: HeritageTrust_de-troyes-expedition
+URL: https://www.heritagetrust.on.ca/plaques/de-troyes-expedition
+Location: N/A
+Coordinates: N/A
+Plaque Text (first 200 chars):
+  In March 1686, the Governor of New France, intent on protecting his colony's fur trade interests, sent an expedition from Montreal under command of Pierre Chevalier de Troyes to attack the Hudson's Ba...
+
+📍 Unique locations: 1
+📍 Unique coordinates: 1
+⚠️  SAME LOCATION - These are multiple plaques at the same spot
+
+================================================================================
+TITLE: Osnaburgh House 1786
+Count: 4 plaques
+================================================================================
+
+[1] ID: HeritageTrust_osnaburgh-house
+URL: https://www.heritagetrust.on.ca/plaques/osnaburgh-house
+Location: N/A
+Coordinates: N/A
+Plaque Text (first 200 chars):
+  The establishment of Osnaburgh House by Chief Trader John Best in 1786 continued the Hudson's Bay Company's expansion inland from Fort Albany, some 500 miles to the east on James Bay. The post, design...
+
+[2] ID: HeritageTrust_osnaburgh-house
+URL: https://www.heritagetrust.on.ca/plaques/osnaburgh-house
+Location: N/A
+Coordinates: N/A
+Plaque Text (first 200 chars):
+  The establishment of Osnaburgh House by Chief Trader John Best in 1786 continued the Hudson's Bay Company's expansion inland from Fort Albany, some 500 miles to the east on James Bay. The post, design...
+
+[3] ID: HeritageTrust_osnaburgh-house
+URL: https://www.heritagetrust.on.ca/plaques/osnaburgh-house
+Location: N/A
+Coordinates: N/A
+Plaque Text (first 200 chars):
+  The establishment of Osnaburgh House by Chief Trader John Best in 1786 continued the Hudson's Bay Company's expansion inland from Fort Albany, some 500 miles to the east on James Bay. The post, design...
+
+[4] ID: HeritageTrust_osnaburgh-house
+URL: https://www.heritagetrust.on.ca/plaques/osnaburgh-house
+Location: N/A
+Coordinates: N/A
+Plaque Text (first 200 chars):
+  The establishment of Osnaburgh House by Chief Trader John Best in 1786 continued the Hudson's Bay Company's expansion inland from Fort Albany, some 500 miles to the east on James Bay. The post, design...
+
+📍 Unique locations: 1
+📍 Unique coordinates: 1
+⚠️  SAME LOCATION - These are multiple plaques at the same spot
+
+================================================================================
+TITLE: Guelph British Methodist Episcopal Church
+Count: 4 plaques
+================================================================================
+
+[1] ID: HeritageTrust_guelph-bme-church
+URL: https://www.heritagetrust.on.ca/plaques/guelph-bme-church
+Location: N/A
+Coordinates: N/A
+Plaque Text (first 200 chars):
+  A testament to the resilience of the Black community, the Guelph British Methodist Episcopal (BME) Church was established in the 1850s by freedom seekers and free Blacks. Many had resided in Wellingto...
+
+[2] ID: HeritageTrust_guelph-bme-church
+URL: https://www.heritagetrust.on.ca/plaques/guelph-bme-church
+Location: N/A
+Coordinates: N/A
+Plaque Text (first 200 chars):
+  A testament to the resilience of the Black community, the Guelph British Methodist Episcopal (BME) Church was established in the 1850s by freedom seekers and free Blacks. Many had resided in Wellingto...
+
+[3] ID: HeritageTrust_guelph-bme-church
+URL: https://www.heritagetrust.on.ca/plaques/guelph-bme-church
+Location: N/A
+Coordinates: N/A
+Plaque Text (first 200 chars):
+  A testament to the resilience of the Black community, the Guelph British Methodist Episcopal (BME) Church was established in the 1850s by freedom seekers and free Blacks. Many had resided in Wellingto...
+
+[4] ID: HeritageTrust_guelph-bme-church
+URL: https://www.heritagetrust.on.ca/plaques/guelph-bme-church
+Location: N/A
+Coordinates: N/A
+Plaque Text (first 200 chars):
+  A testament to the resilience of the Black community, the Guelph British Methodist Episcopal (BME) Church was established in the 1850s by freedom seekers and free Blacks. Many had resided in Wellingto...
+
+📍 Unique locations: 1
+📍 Unique coordinates: 1
+⚠️  SAME LOCATION - These are multiple plaques at the same spot
+
+================================================================================
+TITLE: Victoria Hall
+Count: 3 plaques
+================================================================================
+
+[1] ID: Plaque_Lambton21
+URL: https://www.ontarioplaques.com/Plaques/Plaque_Lambton21.html
+Location: The County of Lambton The Town of Petrolia Part of a small display beside the Victoria Hall on the west side of Greenfield Street just south of Petrolia Line (Road 4)
+Coordinates: Coordinates: N 42 52.856 W 82 08.789
+Plaque Text (first 200 chars):
+  When Victoria Hall was built in 1889, Petrolia, in the midst of an oil boom, was one of the wealthiest towns in Canada. The opulent town hall reflects this stage in the town's growth. While its first ...
+
+[2] ID: Plaque_Northumberland08
+URL: https://www.ontarioplaques.com/Plaques/Plaque_Northumberland08.html
+Location: The County of Northumberland The Town of Cobourg On the south side of King Street West (Road 2) a block west of Division Street (Road 45)
+Coordinates: Coordinates: N 43 57.578 W 78 10.064
+Plaque Text (first 200 chars):
+  One of the finest public buildings in Canada, this imposing structure was built as an expression of civic pride and confidence in the future. It was begun in 1856 and opened by the Prince of Wales fou...
+
+[3] ID: Plaque_Northumberland28
+URL: https://www.ontarioplaques.com/Plaques/Plaque_Northumberland28.html
+Location: The County of Northumberland The Town of Cobourg On the south side of King Street West (Road 2) a block west of Division Street (Road 45)
+Coordinates: Coordinates: N 43 57.567 W 78 10.070
+Plaque Text (first 200 chars):
+  This building, designed by the architect Kivas Tully in a Victorian version of the Palladian style, is representative of the finer public buildings of mid 19th-century Canada. One of the most impressi...
+
+📍 Unique locations: 2
+📍 Unique coordinates: 3
+ℹ️  DIFFERENT LOCATIONS - These are plaques about the same subject in different places
+
+================================================================================
+TITLE: Sir Sandford Fleming 1827-1915
+Count: 3 plaques
+================================================================================
+
+[1] ID: Plaque_Ottawa48
+URL: https://www.ontarioplaques.com/Plaques/Plaque_Ottawa48.html
+Location: The City of Ottawa In front of the Dominion Observatory on Maple Drive south off Carling Avenue mid-way between Preston Street and Parkdale Avenue
+Coordinates: Coordinates: N 45 23.608 W 75 42.853
+Plaque Text (first 200 chars):
+  Engineer and an ardent imperialist, Fleming was born in Kirkcaldy, Scotland. In 1845 he came to Canada, where he became survey and construction engineer for the Intercolonial Railway (1863-76) and the...
+
+[2] ID: Plaque_Outside20
+URL: https://www.ontarioplaques.com/Plaques/Plaque_Outside20.html
+Location: Scotland Fifeshire Outside the Kirkcaldy Museum and Library in Kirkcaldy
+Coordinates: Coordinates: N 56 06.720 W 03 09.898
+Plaque Text (first 200 chars):
+  Inventor of Standard Time and pioneer in world communications, Fleming was born in Kirkcaldy and trained in engineering and surveying before emigrating to  Canada and settling at Peterborough, Ontario...
+
+[3] ID: Plaque_Peterborough12
+URL: https://www.ontarioplaques.com/Plaques/Plaque_Peterborough12.html
+Location: The County of Peterborough The City of Peterborough On the east side of Fleming Park on Alymer Street North between Brock Street and Hunter Street West
+Coordinates: Coordinates: N 44 18.390 W 78 19.420
+Plaque Text (first 200 chars):
+  Inventor of Standard Time and pioneer in world communications, Fleming was born in Kirkcaldy, Scotland, and trained in engineering and surveying before emigrating to Canada and settling in Peterboroug...
+
+📍 Unique locations: 3
+📍 Unique coordinates: 3
+ℹ️  DIFFERENT LOCATIONS - These are plaques about the same subject in different places
+
+================================================================================
+TITLE: Stephen Butler Leacock 1869-1944
+Count: 3 plaques
+================================================================================
+
+[1] ID: Plaque_Outside06
+URL: https://www.ontarioplaques.com/Plaques/Plaque_Outside06.html
+Location: England Hampshire At the Leacock House in Swanmore
+Coordinates: Coordinates: N 50 56.667 W 01 10.870
+Plaque Text (first 200 chars):
+  This internationally-known author and humorist was born here December 30, 1869, and, at the age of six, emigrated with his family to Ontario. Graduating from the University of Toronto in 1891, he taug...
+
+[2] ID: Plaque_Simcoe49
+URL: https://www.ontarioplaques.com/Plaques/Plaque_Simcoe49.html
+Location: The County of Simcoe The City of Orillia Beside the parking lot, at the northern end of Leacock Lane 1.28 km from the intersection of Atherley Road and Highway 12 via Atherley Road, Forest Avenue North Museum Drive and Leacock Lane
+Coordinates: Coordinates: N 44 36.503 W 79 23.622
+Plaque Text (first 200 chars):
+  Born in England, Leacock was educated at Upper Canada College and at the Universities of Toronto and Chicago. He spent the greater part of his career at McGill, teaching and publishing in the fields o...
+
+[3] ID: Plaque_York07
+URL: https://www.ontarioplaques.com/Plaques/Plaque_York07.html
+Location: The Region of York The Town of Georgina In Sutton, in front of a church at the intersection of Hedge Road and Park Road, 2.8 km north of Highway 48
+Coordinates: Coordinates: N 44 19.872 W 79 19.951
+Plaque Text (first 200 chars):
+  This internationally-known author and humorist is buried in the churchyard. Born in Swanmore, Hampshire, England, Leacock came with his family to this township in 1876. Graduating from the University ...
+
+📍 Unique locations: 3
+📍 Unique coordinates: 3
+ℹ️  DIFFERENT LOCATIONS - These are plaques about the same subject in different places
+
+================================================================================
+TITLE: The Rosseau-Nipissing Road
+Count: 3 plaques
+================================================================================
+
+[1] ID: Plaque_Parry10
+URL: https://www.ontarioplaques.com/Plaques/Plaque_Parry10.html
+Location: The District of Parry Sound The Township of Nipissing In Nipissing, at the Nipissing Township Museum on the northeast corner of Highway 654 and Beatty Street
+Coordinates: Coordinates: N 46 05.711 W 79 30.871
+Plaque Text (first 200 chars):
+  Designed to encourage settlement in what is now the Parry Sound District, the Rosseau-Nipissing Road was authorized by the government in 1864. A survey was completed the following year by J.S. Dennis,...
+
+[2] ID: Plaque_Parry11
+URL: https://www.ontarioplaques.com/Plaques/Plaque_Parry11.html
+Location: The District of Parry Sound The Municipality of Magnetawan On Sparks Street, on the west side of the bridge on the south side of the river
+Coordinates: Coordinates: N 45 39.810 W 79 38.606
+Plaque Text (first 200 chars):
+  Designed to encourage settlement in what is now the Parry Sound District, the Rosseau-Nipissing Road was authorized by the government in 1864. A survey was completed the following year by J.S. Dennis,...
+
+[3] ID: Plaque_Parry14
+URL: https://www.ontarioplaques.com/Plaques/Plaque_Parry14.html
+Location: The District of Parry Sound The Township of Seguin In Rosseau, in front of Rosseau Hall, on Victoria Street just west of Highway 141
+Coordinates: Coordinates: N 45 15.458 W 79 38.448
+Plaque Text (first 200 chars):
+  Designed to encourage settlement in what is now the Parry Sound District, the Rosseau-Nipissing Road was authorized by the government in 1864. A survey was completed the following year by J.S. Dennis,...
+
+📍 Unique locations: 3
+📍 Unique coordinates: 3
+ℹ️  DIFFERENT LOCATIONS - These are plaques about the same subject in different places
+
+================================================================================
+TITLE: St. Paul's Church
+Count: 3 plaques
+================================================================================
+
+[1] ID: HeritageTrust_st-pauls-church914
+URL: https://www.heritagetrust.on.ca/plaques/st-pauls-church914
+Location: N/A
+Coordinates: N/A
+Plaque Text (first 200 chars):
+  Begun in 1854 and completed three years later, this Presbyterian church was designed in the Gothic revival style by architect William Thomas. The elegant eighty-foot spire set atop a hundred-foot towe...
+
+[2] ID: HeritageTrust_st-pauls-church6
+URL: https://www.heritagetrust.on.ca/plaques/st-pauls-church6
+Location: N/A
+Coordinates: N/A
+Plaque Text (first 200 chars):
+  In 1865, in response to a proposal of the Canadian Land and Emigration Company, the Church of England in Canada established the Minden Mission. The Company, which had purchased ten townships in the di...
+
+[3] ID: HeritageTrust_st-pauls-church263
+URL: https://www.heritagetrust.on.ca/plaques/st-pauls-church263
+Location: N/A
+Coordinates: N/A
+Plaque Text (first 200 chars):
+  In 1828, Richard Duncan Fraser, the son of an early Loyalist settler, Thomas Fraser, donated land here for the building of a church to serve the Anglicans in this area. Their minister, the Reverend J....
+
+📍 Unique locations: 1
+📍 Unique coordinates: 1
+⚠️  SAME LOCATION - These are multiple plaques at the same spot
+
+================================================================================
+TITLE: Adelaide Hunter Hoodless 1857-1910
+Count: 2 plaques
+================================================================================
+
+[1] ID: Plaque_Brant22
+URL: https://www.ontarioplaques.com/Plaques/Plaque_Brant22.html
+Location: The County of Brant On the north side of Blue Lake Road (Road 35) west of Highway 24, street number 359
+Coordinates: Coordinates: N 43 14.226 W 80 17.812
+Plaque Text (first 200 chars):
+  Born in Ontario, Adelaide Hoodless sought to release the full potential of women for social action. An outspoken educator and social reformer, she successfully pressed for acceptance of Domestic Econo...
+
+[2] ID: Plaque_Brant26
+URL: https://www.ontarioplaques.com/Plaques/Plaque_Brant26.html
+Location: The County of Brant On the north side of Blue Lake Road (Road 35) west of Highway 24, street number 359
+Coordinates: Coordinates: N 43 14.226 W 80 17.812
+Plaque Text (first 200 chars):
+  Adelaide Hunter was born in this farm house and lived here until she married John Hoodless in 1881. On February, 19, 1897, she organized at Stoney Creek the world's first Women's Institute. It was her...
+
+📍 Unique locations: 1
+📍 Unique coordinates: 1
+⚠️  SAME LOCATION - These are multiple plaques at the same spot
+
+================================================================================
+TITLE: Toronto, Grey and Bruce Railway
+Count: 2 plaques
+================================================================================
+
+[1] ID: Plaque_Dufferin03
+URL: https://www.ontarioplaques.com/Plaques/Plaque_Dufferin03.html
+Location: The County of Dufferin The Town of Orangeville At the intersection of Townline and Mill Street across from the GO Orangeville Station
+Coordinates: Coordinates: N 43 54.833 W 80 05.452
+Plaque Text (first 200 chars):
+  This pioneer railway was chartered in 1868 and the first sod was turned at Weston on October 5, 1869, by Prince Arthur, third son of Queen Victoria. Constructed under direction of chief engineer Edmun...
+
+[2] ID: Plaque_Grey29
+URL: https://www.ontarioplaques.com/Plaques/Plaque_Grey29.html
+Location: The County of Grey The City of Owen Sound Along an unnamed road, west of the old train station at 1st Avenue East and 12th Street East
+Coordinates: Coordinates: N 44 34.357 W 80 56.560
+Plaque Text (first 200 chars):
+  This pioneer railway was chartered in 1868 and the first sod was turned at Weston on October 5, 1869, by Prince Arthur, third son of Queen Victoria. Constructed under direction of chief engineer Edmun...
+
+📍 Unique locations: 2
+📍 Unique coordinates: 2
+ℹ️  DIFFERENT LOCATIONS - These are plaques about the same subject in different places
+
+================================================================================
+TITLE: The Capture of Detroit
+Count: 2 plaques
+================================================================================
+
+[1] ID: Plaque_Essex43
+URL: https://www.ontarioplaques.com/Plaques/Plaque_Essex43.html
+Location: The County of Essex The City of Windsor At the intersection of Sandwich Street and Ojibway Parkway
+Coordinates: Coordinates: N 42 17.027 W 83 05.200
+Plaque Text (first 200 chars):
+  Confident of victory, General Hull had invaded Canada in July 1812, but failed to take advantage of his early success and the demoralization of the defenders. Fear of the Indians then rallying to the ...
+
+[2] ID: Plaque_Norfolk25
+URL: https://www.ontarioplaques.com/Plaques/Plaque_Norfolk25.html
+Location: The County of Norfolk In Port Dover, on the east side of the river beside the Port Authority building accessed by Passmore Avenue
+Coordinates: Coordinates: N 42 47.032 W 80 11.941
+Plaque Text (first 200 chars):
+  To counter the American invasion of the Detroit frontier, Major General Isaac Brock mustered a force of about 50 regulars and 250 militia here in Port Dover. They embarked on 8 August 1812 and, procee...
+
+📍 Unique locations: 2
+📍 Unique coordinates: 2
+ℹ️  DIFFERENT LOCATIONS - These are plaques about the same subject in different places
+
+================================================================================
+TITLE: Bishop Alexander Macdonell 1762-1840
+Count: 2 plaques
+================================================================================
+
+[1] ID: Plaque_Frontenac12
+URL: https://www.ontarioplaques.com/Plaques/Plaque_Frontenac12.html
+Location: The County of Frontenac The City of Kingston On the southwest corner of Bagot and Johnson streets
+Coordinates: Coordinates: N 44 13.794 W 76 29.121
+Plaque Text (first 200 chars):
+  Patriot, colonizer and priest, he was born in the Highlands of Scotland. In 1804 he came to Canada as chaplain of the disbanded Glengarry Fencibles and later became Auxiliary Bishop of Quebec. As the ...
+
+[2] ID: Plaque_Stormont43
+URL: https://www.ontarioplaques.com/Plaques/Plaque_Stormont43.html
+Location: The United Counties of Stormont, Dundas and Glengarry The Township of South Glengarry In St. Raphaels, on a stone cairn in front of St. Raphael's Church Ruins
+Coordinates: Coordinates: N 45 12.721 W 74 35.844
+Plaque Text (first 200 chars):
+  Born in Scotland and educated for the priesthood, MacDonell obtained land in Glengarry County and, in 1804, brought many soldiers from his disbanded Highland Regiment to join the Loyalists already in ...
+
+📍 Unique locations: 2
+📍 Unique coordinates: 2
+ℹ️  DIFFERENT LOCATIONS - These are plaques about the same subject in different places
+
+================================================================================
+TITLE: Sir John Alexander Macdonald 1815-1891
+Count: 2 plaques
+================================================================================
+
+[1] ID: Plaque_Frontenac64
+URL: https://www.ontarioplaques.com/Plaques/Plaque_Frontenac64.html
+Location: The County of Frontenac The City of Kingston On the left side of the outside wall of this house at 112 Rideau Street
+Coordinates: Coordinates: N 44 14.201 W 76 28.957
+Plaque Text (first 200 chars):
+  Statesman and Patriot. His boyhood days, those critical years that decide the character of the man, were spent here in the Old Town which has seen more than a Century of Canadian History.
+
+[2] ID: Plaque_Lennox29
+URL: https://www.ontarioplaques.com/Plaques/Plaque_Lennox29.html
+Location: The County of Lennox & Addington The Town of Greater Napanee In Adolphustown, at the United Empire Loyalist Heritage Centre and Park's Allison House
+Coordinates: Coordinates: N 44 03.689 W 77 00.317
+Plaque Text (first 200 chars):
+  From this soil, home of the Loyalists, he drew inspiration to weld together the weak and scattered colonies of his day into a strong and ambitious Dominion, equal partner in the far-flung British Comm...
+
+📍 Unique locations: 2
+📍 Unique coordinates: 2
+ℹ️  DIFFERENT LOCATIONS - These are plaques about the same subject in different places
+
+================================================================================
+TITLE: Tom Thomson 1877-1917
+Count: 2 plaques
+================================================================================
+
+[1] ID: Plaque_Grey06
+URL: https://www.ontarioplaques.com/Plaques/Plaque_Grey06.html
+Location: The County of Grey The Municipality of Meaford In Leith, at a church on the west side of Tom Thomson Lane (Street Number 41914) southwest of the intersection of Roads 20 and 15
+Coordinates: Coordinates: N 44 37.293 W 80 52.636
+Plaque Text (first 200 chars):
+  One of Canada's most distinguished painters. Thomson was born at Claremont, Ontario County, but two months later moved with his parents to Leith where he lived until the age of twenty-one. After worki...
+
+[2] ID: Plaque_Nipissing14
+URL: https://www.ontarioplaques.com/Plaques/Plaque_Nipissing14.html
+Location: The District of Nipissing Algonquin Provincial Park At the Portage Store at Canoe Lake off Highway 60 about 34 km east of the junction of Highways 60 and 35
+Coordinates: Coordinates: N 45 32.112 W 78 42.450
+Plaque Text (first 200 chars):
+  This distinguished painter was born in Claremont, Ontario, and grew up near Owen Sound. While working as a photo-engraver in Toronto, he met some of the artists who later formed the Group of Seven. Th...
+
+📍 Unique locations: 2
+📍 Unique coordinates: 2
+ℹ️  DIFFERENT LOCATIONS - These are plaques about the same subject in different places
+
+================================================================================
+TITLE: The Niagara Escarpment
+Count: 2 plaques
+================================================================================
+
+[1] ID: Plaque_Hamilton04
+URL: https://www.ontarioplaques.com/Plaques/Plaque_Hamilton04.html
+Location: The City of Hamilton At the north edge of the parking lot at the north end of Highcliffe Avenue
+Coordinates: Coordinates: N 43 14.707 W 79 51.967
+Plaque Text (first 200 chars):
+  Hamilton Mountain is part of the Niagara Escarpment, a height of land extending 725 km across Ontario from Niagara Falls to Manitoulin Island. Over 430 million years ago, a tropical sea covered most o...
+
+[2] ID: Plaque_Niagara83
+URL: https://www.ontarioplaques.com/Plaques/Plaque_Niagara83.html
+Location: The Region of Niagara The Town of Niagara-on-the-Lake On Niagara Parkway at a parking area lookout just south of Queenston, .5 km south of York Road (Road 81)
+Coordinates: Coordinates: N 43 09.690 W 79 02.990
+Plaque Text (first 200 chars):
+  Queenston Heights is part of the Niagara Escarpment, a height of land which extends 725 kilometres across Ontario from Niagara Falls to Manitoulin Island. Over 430 million years ago, a shallow tropica...
+
+📍 Unique locations: 2
+📍 Unique coordinates: 2
+ℹ️  DIFFERENT LOCATIONS - These are plaques about the same subject in different places
+
+================================================================================
+TITLE: Whitehern
+Count: 2 plaques
+================================================================================
+
+[1] ID: Plaque_Hamilton34
+URL: https://www.ontarioplaques.com/Plaques/Plaque_Hamilton34.html
+Location: The City of Hamilton On the southwest corner of Macnab Street South and Jackson Street West 1 block south of Main Street West
+Coordinates: Coordinates: N 43 15.285 W 79 52.299
+Plaque Text (first 200 chars):
+  This stately mansion is a finely crafted and well-preserved example of Hamilton's early stone architecture. Built no later than 1850 for city clerk and attorney Richard Duggan, it was purchased in 185...
+
+[2] ID: Plaque_Hamilton46
+URL: https://www.ontarioplaques.com/Plaques/Plaque_Hamilton46.html
+Location: The City of Hamilton On the southwest corner of Macnab Street South and Jackson Street West 1 block south of Main Street West
+Coordinates: Coordinates: N 43 15.298 W 79 52.337
+Plaque Text (first 200 chars):
+  Set in a rare walled garden and enriched by its interior decoration, Whitehern is a remarkably intact example of mid-19th century residential architecture. The lingering influence of the Palladian sty...
+
+📍 Unique locations: 1
+📍 Unique coordinates: 2
+
+================================================================================
+TITLE: Susanna Moodie 1803-1885
+Count: 2 plaques
+================================================================================
+
+[1] ID: Plaque_Hastings33
+URL: https://www.ontarioplaques.com/Plaques/Plaque_Hastings33.html
+Location: The County of Hastings The City of Belleville In front of Susanna Moodie Cottage at 114 Bridge Street West at Sinclair Street
+Coordinates: Coordinates: N 44 09.689 W 77 23.604
+Plaque Text (first 200 chars):
+  Born in England, Mrs. Moodie immigrated to Upper Canada with her husband in 1832. They farmed near Cobourg for two years then moved to the wooded Rice Lake area near the frontier of the colony before ...
+
+[2] ID: Plaque_Peterborough05
+URL: https://www.ontarioplaques.com/Plaques/Plaque_Peterborough05.html
+Location: The County of Peterborough The Township of Selwyn In Lakefield, in a park on the southeast corner of Water Street and Bridge Street
+Coordinates: Coordinates: N 44 25.327 W 78 16.370
+Plaque Text (first 200 chars):
+  This talented writer, the wife of a retired British army officer, emigrated with her husband and daughter to Upper Canada in 1832. In 1834 they moved to a nearby farm lot to be near her brother, Samue...
+
+📍 Unique locations: 2
+📍 Unique coordinates: 2
+ℹ️  DIFFERENT LOCATIONS - These are plaques about the same subject in different places
+
+================================================================================
+TITLE: The St. Clair Tunnel
+Count: 2 plaques
+================================================================================
+
+[1] ID: Plaque_Lambton06
+URL: https://www.ontarioplaques.com/Plaques/Plaque_Lambton06.html
+Location: The County of Lambton The City of Sarnia On the north side of St. Andrew Street between Christina Street South and Vidal Street South
+Coordinates: Coordinates: N 42 57.461 W 82 24.614
+Plaque Text (first 200 chars):
+  The first international submarine railway tunnel in North America was built here, 1889-9, by the Grand Trunk Railway Company of Canada. It connects Sarnia with Port Huron, Michigan. To compete with U....
+
+[2] ID: Plaque_Lambton20
+URL: https://www.ontarioplaques.com/Plaques/Plaque_Lambton20.html
+Location: The County of Lambton The City of Sarnia On the north side of St. Andrew Street between Christina Street South and Vidal Street South
+Coordinates: Coordinates: N 42 57.461 W 82 24.614
+Plaque Text (first 200 chars):
+  This was the first subaqueous tunnel in North America and one of the great engineering feats of the 19th century. Built in 1889-1891 to link the Canadian mainline of the Grand Trunk Railway with Chica...
+
+📍 Unique locations: 1
+📍 Unique coordinates: 1
+⚠️  SAME LOCATION - These are multiple plaques at the same spot
+
+================================================================================
+TITLE: St. Andrew's Church
+Count: 2 plaques
+================================================================================
+
+[1] ID: Plaque_Niagara03
+URL: https://www.ontarioplaques.com/Plaques/Plaque_Niagara03.html
+Location: The Region of Niagara The Town of Niagara-on-the-Lake At the church on the west side of Simcoe Street between Gage and Centre streets
+Coordinates: Coordinates: N 43 15.310 W 79 04.787
+Plaque Text (first 200 chars):
+  Presbyterians formed a congregation at Niagara in 1794 with John Dun as resident minister. Within a year they had built a church, and by 1802 a schoolhouse. American troops burned the church during th...
+
+[2] ID: Plaque_Stormont27
+URL: https://www.ontarioplaques.com/Plaques/Plaque_Stormont27.html
+Location: The United Counties of Stormont, Dundas and Glengarry The Township of South Stormont In St. Andrews, on the southwest corner of Highway 138 and Road 18
+Coordinates: Coordinates: N 45 05.758 W 74 47.848
+Plaque Text (first 200 chars):
+  This building, the oldest remaining stone structure in the province erected as a church, was completed about 1801. Many of the pioneer settlers in this area were Roman Catholic Highlanders, ministered...
+
+📍 Unique locations: 2
+📍 Unique coordinates: 2
+ℹ️  DIFFERENT LOCATIONS - These are plaques about the same subject in different places
+
+================================================================================
+TITLE: Willowbank
+Count: 2 plaques
+================================================================================
+
+[1] ID: Plaque_Niagara107
+URL: https://www.ontarioplaques.com/Plaques/Plaque_Niagara107.html
+Location: The Region of Niagara The Town of Niagara-on-the-Lake In Queenston, at the end of a long driveway beginning at the intersection of Dee Road and the Niagara Parkway
+Coordinates: Coordinates: N 43 10.057 W 79 03.483
+Plaque Text (first 200 chars):
+  Named after the magnificent willow trees that once graced its grounds, Willowbank is an elegant example of the great rural estates of early 19th-century Upper Canada. Built for local businessman Alexa...
+
+[2] ID: Plaque_Niagara116
+URL: https://www.ontarioplaques.com/Plaques/Plaque_Niagara116.html
+Location: The Region of Niagara The Town of Niagara-on-the-Lake In Queenston, on the west side of Queenston Street just north of Dee Road
+Coordinates: Coordinates: N 43 10.053 W 79 03.381
+Plaque Text (first 200 chars):
+  An outstanding example of Classical Revival architecture, this stately home was begun in 1833 and completed some two years later. It was erected by Alexander Hamilton (1794-1839), Sheriff of the Niaga...
+
+📍 Unique locations: 2
+📍 Unique coordinates: 2
+ℹ️  DIFFERENT LOCATIONS - These are plaques about the same subject in different places
+
+================================================================================
+TITLE: William Hamilton Merritt 1793-1862
+Count: 2 plaques
+================================================================================
+
+[1] ID: Plaque_Niagara113
+URL: https://www.ontarioplaques.com/Plaques/Plaque_Niagara113.html
+Location: The Region of Niagara The City of St. Catharines On the east side of Welland Canal Parkway on the canal side of the Welland Canals Centre 1.1 km south of Queenston Street (Road 81)
+Coordinates: Coordinates: N 43 09.332 W 79 11.645
+Plaque Text (first 200 chars):
+  Born of a Loyalist family in the state of New York, Merritt became a pioneer merchant and industrialist on Upper Canada's Niagara frontier. In 1818 he began to promote construction of the Welland Cana...
+
+[2] ID: Plaque_Niagara40
+URL: https://www.ontarioplaques.com/Plaques/Plaque_Niagara40.html
+Location: The Region of Niagara The City of St. Catharines On the southeast corner of St. Paul Street West and McGuire Street just east of the bridge over Highway 406
+Coordinates: Coordinates: N 43 09.254 W 79 14.767
+Plaque Text (first 200 chars):
+  A pioneer in the field of transportation, Merritt was born in Bedford, New York, and settled at Twelve Mile Creek (St. Catharines) with his Loyalist family in 1796. He served with the provincial caval...
+
+📍 Unique locations: 2
+📍 Unique coordinates: 2
+ℹ️  DIFFERENT LOCATIONS - These are plaques about the same subject in different places
+
+================================================================================
+TITLE: Canoe Route to the West
+Count: 2 plaques
+================================================================================
+
+[1] ID: Plaque_Nipissing02
+URL: https://www.ontarioplaques.com/Plaques/Plaque_Nipissing02.html
+Location: The District of  Nipissing The Town of Mattawa On the northwest corner of Main Street (Road 533) and Mattawan Street
+Coordinates: Coordinates: N 46 19.126 W 78 42.391
+Plaque Text (first 200 chars):
+  Here, when the canoe was the principal means of travel, explorers, voyageurs, missionaries and others bound for the West, left the Ottawa River and followed the Mattawa River to Lake Nipissing, the Fr...
+
+[2] ID: Plaque_Parry09
+URL: https://www.ontarioplaques.com/Plaques/Plaque_Parry09.html
+Location: The District of Parry Sound The Township of the Archipelago In French River Provincial Park, along the walkway between the parking lot and the Visitor Centre, just off Highway 69 first right southbound, south of the French River bridge
+Coordinates: Coordinates: N 46 01.004 W 80 35.086
+Plaque Text (first 200 chars):
+  The French River formed a vital link in the historic canoe route via the Ottawa and Mattawa Rivers and Lake Nipissing, which connected the settlements on the St. Lawrence with the upper Great Lakes an...
+
+📍 Unique locations: 2
+📍 Unique coordinates: 2
+ℹ️  DIFFERENT LOCATIONS - These are plaques about the same subject in different places
+
+================================================================================
+TITLE: Barnum House
+Count: 2 plaques
+================================================================================
+
+[1] ID: Plaque_Northumberland13
+URL: https://www.ontarioplaques.com/Plaques/Plaque_Northumberland13.html
+Location: The County of Northumberland The Township of Alnwick/Haldimand On the north side of Road 2 at Barnum House Road at street number 10568, 1.7 km west of Grafton
+Coordinates: Coordinates: N 43 59.453 W 78 02.610
+Plaque Text (first 200 chars):
+  A superb example of a prosperous Upper Canada home, this elegant classical building was erected about 1819. Though its interior has been modified several times since, the façade remains essentially un...
+
+[2] ID: Plaque_Northumberland25
+URL: https://www.ontarioplaques.com/Plaques/Plaque_Northumberland25.html
+Location: The County of Northumberland The Township of Alnwick/Haldimand On the north side of Road 2 at Barnum House Road at street number 10568, 1.7 km west of Grafton
+Coordinates: Coordinates: N 43 59.453 W 78 02.610
+Plaque Text (first 200 chars):
+  Built ca. 1820 for Colonel Eliakim Barnum, an American emigrant, this timber-framed home is recognized as an outstanding example of Neoclassic domestic architecture in Canada. While retaining a Pallad...
+
+📍 Unique locations: 1
+📍 Unique coordinates: 1
+⚠️  SAME LOCATION - These are multiple plaques at the same spot
+
+================================================================================
+TITLE: Central Experimental Farm
+Count: 2 plaques
+================================================================================
+
+[1] ID: Plaque_Ottawa25
+URL: https://www.ontarioplaques.com/Plaques/Plaque_Ottawa25.html
+Location: The City of Ottawa On the northeast corner of the National Capital Commission Scenic Driveway and Maple Drive just west of Prince of Wales Drive
+Coordinates: Coordinates: N 45 23.361 W 75 42.603
+Plaque Text (first 200 chars):
+  A rare example of a farm within a city, this outstanding cultural landscape brings together two strong 19th century interests: agricultural improvement and picturesque design. Established by the feder...
+
+[2] ID: Plaque_Ottawa64
+URL: https://www.ontarioplaques.com/Plaques/Plaque_Ottawa64.html
+Location: The City of Ottawa On the south side of the National Capital Commission Scenic Driveway a block west of Prince of Wales Drive
+Coordinates: Coordinates: N 45 23.373 W 75 42.528
+Plaque Text (first 200 chars):
+  Canada's experimental farms system was begun in 1886 by a federal government eager to introduce profitable new methods and products. It sought thereby to broaden Canada's agricultural frontiers, espec...
+
+📍 Unique locations: 2
+📍 Unique coordinates: 2
+ℹ️  DIFFERENT LOCATIONS - These are plaques about the same subject in different places
+
+================================================================================
+TITLE: The Dutch Settlement of Holland Marsh
+Count: 2 plaques
+================================================================================
+
+[1] ID: Plaque_Outside15
+URL: https://www.ontarioplaques.com/Plaques/Plaque_Outside15.html
+Location: Netherlands The Village of Nieuwe Pekela On the side of an arch to the east of this brick building
+Coordinates: Coordinates: N 53 04.430 E 06 57.673
+Plaque Text (first 200 chars):
+  The Holland Marsh consists of 2832 ha of reclaimed land in a river valley north of Toronto, Ontario. Named after an early provincial official, this fertile area was drained between 1925 and 1930. John...
+
+[2] ID: Plaque_York13
+URL: https://www.ontarioplaques.com/Plaques/Plaque_York13.html
+Location: The Region of York The Township of King In Ansnorveldt, at the public library on Bernhardt Road, a short distance east of the intersection of Dufferin Street and Bernhardt Road, 4.1 km north of Highway 9
+Coordinates: Coordinates: N 44 04.798 W 79 32.303
+Plaque Text (first 200 chars):
+  The Holland Marsh consists of 2832 ha of reclaimed land in the Schomberg River Valley. Named after an early provincial official, this fertile area was drained between 1925 and 1930. John Snor, Canadia...
+
+📍 Unique locations: 2
+📍 Unique coordinates: 2
+ℹ️  DIFFERENT LOCATIONS - These are plaques about the same subject in different places
+
+================================================================================
+TITLE: Catharine Parr Traill 1802-1899
+Count: 2 plaques
+================================================================================
+
+[1] ID: Plaque_Peterborough11
+URL: https://www.ontarioplaques.com/Plaques/Plaque_Peterborough11.html
+Location: The County of Peterborough The Township of Selwyn In Lakefield, on the north side of Smith Street east of Clementi Street
+Coordinates: Coordinates: N 44 25.321 W 78 16.617
+Plaque Text (first 200 chars):
+  A member of the literary Strickland family, the talented author married Lieut. Thomas Traill and emigrated to Upper Canada in 1832. For seven years they struggled unsuccessfully to establish a profita...
+
+[2] ID: Plaque_Peterborough16
+URL: https://www.ontarioplaques.com/Plaques/Plaque_Peterborough16.html
+Location: The County of Peterborough The Township of Selwyn At Youngs Point, near the Otonabee River at the south end of Nathaway Drive off Highway 28 just north of the Otonabee River Bridge
+Coordinates: Coordinates: N 44 29.289 W 78 13.990
+Plaque Text (first 200 chars):
+  Born in London, Catherine Strickland married Lieutenant Thomas Traill in 1832 and emigrated to Upper Canada, settling in Douro Township and subsequently at Lakefield. A writer of children's stories an...
+
+📍 Unique locations: 2
+📍 Unique coordinates: 2
+ℹ️  DIFFERENT LOCATIONS - These are plaques about the same subject in different places
+
+================================================================================
+TITLE: Waterloo Pioneers
+Count: 2 plaques
+================================================================================
+
+[1] ID: Plaque_Waterloo25
+URL: https://www.ontarioplaques.com/Plaques/Plaque_Waterloo25.html
+Location: The Region of Waterloo The City of Kitchener 1 block west of Sportsworld Drive, off King Street East, can be found Deer Ridge Drive. Follow it to Lookout Lane at the end of which is this tower.
+Coordinates: Coordinates: N 43 24.025 W 80 24.963
+Plaque Text (first 200 chars):
+  In the year 1800 a small number of Mennonite families arrived from Pennsylvania to settle Block 2, former Six Nation land along the Grand River. Others, mainly Mennonites, following during the next th...
+
+[2] ID: Plaque_Waterloo32
+URL: https://www.ontarioplaques.com/Plaques/Plaque_Waterloo32.html
+Location: The Region of Waterloo The City of Kitchener 1 block west of Sportsworld Drive, off King Street East, can be found Deer Ridge Drive. Follow it to Lookout Lane at the end of which is this tower. This plaque is attached to the tower wall.
+Coordinates: Coordinates: N 43 24.025 W 80 24.963
+Plaque Text (first 200 chars):
+  In the spring of 1800, Joseph Schoerg and Samuel Betzner, Jr., brothers-in-law, Mennonites, from Franklin County, Pennsylvania, began the first two farms in the County of Waterloo; Schoerg on land adj...
+
+📍 Unique locations: 2
+📍 Unique coordinates: 1
+ℹ️  DIFFERENT LOCATIONS - These are plaques about the same subject in different places
+
+================================================================================
+TITLE: Edward Johnson 1878-1959
+Count: 2 plaques
+================================================================================
+
+[1] ID: Plaque_Wellington27
+URL: https://www.ontarioplaques.com/Plaques/Plaque_Wellington27.html
+Location: The County of Wellington The City of Guelph On the east side of Cardigan Street between London Road and Norwich Street
+Coordinates: Coordinates: N 43 33.032 W 80 15.260
+Plaque Text (first 200 chars):
+  Edward Johnson, musician, impresario and educator, was born and died and Guelph. After initial successes on Broadway, he went to Italy to study and emerged as one of the distinguished Tenors of a gene...
+
+[2] ID: Plaque_Wellington39
+URL: https://www.ontarioplaques.com/Plaques/Plaque_Wellington39.html
+Location: The County of Wellington The City of Guelph On the east side of Woolwich Street just south of Marilyn Drive, south of Woodlawn Road (Reported by Wayne Adam as missing as of March 2015)
+Coordinates: Coordinates: N 43 33.688 W 80 16.330
+Plaque Text (first 200 chars):
+  Edward Johnson, one of the world's leading operatic tenors, was born in Guelph and lived for many years in a house which stood near this site. He studied in Italy and made his European debut in 1912 a...
+
+📍 Unique locations: 2
+📍 Unique coordinates: 2
+ℹ️  DIFFERENT LOCATIONS - These are plaques about the same subject in different places
+
+================================================================================
+TITLE: Sharon Temple
+Count: 2 plaques
+================================================================================
+
+[1] ID: Plaque_York04
+URL: https://www.ontarioplaques.com/Plaques/Plaque_York04.html
+Location: The Region of York The Town of East Gwillimbury In Sharon, in front of the temple on the east side of Leslie Street (Road 12) just south of Mount Albert Road (Road 13)
+Coordinates: Coordinates: N 44 06.090 W 79 26.470
+Plaque Text (first 200 chars):
+  Erected 1825-32, its architecture symbolizes the religious beliefs of its builder, David Willson, born in New York State 1778. Disowned by the Society of Friends (Quakers), he established hereabouts t...
+
+[2] ID: Plaque_York33
+URL: https://www.ontarioplaques.com/Plaques/Plaque_York33.html
+Location: The Region of York The Town of East Gwillimbury In Sharon, in front of the temple on the east side of Leslie Street (Road 12) just south of Mount Albert Road (Road 13)
+Coordinates: Coordinates: N 44 06.090 W 79 26.470
+Plaque Text (first 200 chars):
+  This elegant structure stands as testament to the faith and good works of the Children of Peace. In 1825-1832 master carpenters Ebenezer and John Doan constructed it to the plans of religious leader D...
+
+📍 Unique locations: 1
+📍 Unique coordinates: 1
+⚠️  SAME LOCATION - These are multiple plaques at the same spot
+
+================================================================================
+TITLE: Lieutenant-General John Graves Simcoe 1752-1806
+Count: 2 plaques
+================================================================================
+
+[1] ID: HeritageTrust_lieutenant-general-john-graves-simcoe-1752-1806458
+URL: https://www.heritagetrust.on.ca/plaques/lieutenant-general-john-graves-simcoe-1752-1806458
+Location: N/A
+Coordinates: N/A
+Plaque Text (first 200 chars):
+  The First Lieutenant Governor of Upper Canada, Present-Day Ontario, John Graves Simcoe was born in Cotterstock, Northamptonshire and attended Exeter Fress Grammar School in his early youth. He entered...
+
+[2] ID: HeritageTrust_lieutenant-general-john-graves-simcoe-1752-1806734
+URL: https://www.heritagetrust.on.ca/plaques/lieutenant-general-john-graves-simcoe-1752-1806734
+Location: N/A
+Coordinates: N/A
+Plaque Text (first 200 chars):
+  Born in Cotterstock, Northamptonshire, Simcoe entered the army in 1770, and during the American Revolution commanded the 1st American Regiment (Queen's Rangers). In 1791 he was appointed the first Lie...
+
+📍 Unique locations: 1
+📍 Unique coordinates: 1
+⚠️  SAME LOCATION - These are multiple plaques at the same spot
+
+================================================================================
+TITLE: Grand Portage, The
+Count: 2 plaques
+================================================================================
+
+[1] ID: HeritageTrust_grand-portage662
+URL: https://www.heritagetrust.on.ca/plaques/grand-portage662
+Location: N/A
+Coordinates: N/A
+Plaque Text (first 200 chars):
+  Circumventing 21 miles of falls and rapids, this portage ran some nine miles from Lake Superior to a point upstream on the opposite side of the Pigeon River. It was first mentioned in 1722 by a French...
+
+[2] ID: HeritageTrust_grand-portage737
+URL: https://www.heritagetrust.on.ca/plaques/grand-portage737
+Location: N/A
+Coordinates: N/A
+Plaque Text (first 200 chars):
+  Circumventing 21 miles of falls and rapids, this portage ran some nine miles from this vicinity to a point upstream on the Pigeon River. It was first mentioned in 1722 by a French trader named Jean Pa...
+
+📍 Unique locations: 1
+📍 Unique coordinates: 1
+⚠️  SAME LOCATION - These are multiple plaques at the same spot
+
+
+================================================================================
+=== CHECKING FOR NEAR-IDENTICAL TEXT ===
+================================================================================
+
+
+⚠️  HIGH SIMILARITY (95.1%): Toronto, Grey and Bruce Railway
+   Plaque_Dufferin03 vs Plaque_Grey29
+   Location match: NO
+
+⚠️  HIGH SIMILARITY (81.3%): The Niagara Escarpment
+   Plaque_Hamilton04 vs Plaque_Niagara83
+   Location match: NO
+
+⚠️  HIGH SIMILARITY (91.4%): The Dutch Settlement of Holland Marsh
+   Plaque_Outside15 vs Plaque_York13
+   Location match: NO
+
+⚠️  HIGH SIMILARITY (91.8%): Grand Portage, The
+   HeritageTrust_grand-portage662 vs HeritageTrust_grand-portage737
+   Location match: YES
+
+
+=== SUMMARY ===
+You have 35 sets of duplicate titles.
+
+Recommendations:
+1. Keep duplicates that are at DIFFERENT locations (different perspectives on same subject)
+2. Review duplicates at SAME location - may want to merge or keep both if text is substantially different
+3. Consider adding a suffix to titles to distinguish them (e.g., "Title (Location A)", "Title (Location B)")

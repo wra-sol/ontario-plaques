@@ -1,0 +1,252 @@
+[
+  {
+    "heritage_title": "Wilkins Expedition 1763, The",
+    "local_title": "The Wilkins Expedition 1763",
+    "match": "exact"
+  },
+  {
+    "heritage_title": "Alma College",
+    "local_title": "Alma College",
+    "match": "exact"
+  },
+  {
+    "heritage_title": "Dr. Charles Duncombe 1791-1867",
+    "local_title": "Dr. Charles Duncombe 1791-1867",
+    "match": "exact"
+  },
+  {
+    "heritage_title": "Honourable Mitchell F. Hepburn 1896-1953, The",
+    "local_title": "Honourable Mitchell F. Hepburn, 1896-1953",
+    "match": "exact"
+  },
+  {
+    "heritage_title": "Jumbo",
+    "local_title": "Jumbo",
+    "match": "exact"
+  },
+  {
+    "heritage_title": "Captain Daniel Rapelje 1774-1828",
+    "local_title": "Captain Daniel Rapelje 1774-1828",
+    "match": "exact"
+  },
+  {
+    "heritage_title": "RCAF Technical Training School",
+    "local_title": "RCAF Technical Training School",
+    "match": "exact"
+  },
+  {
+    "heritage_title": "Honourable John Rolph, M.D. 1793-1870, The",
+    "local_title": "The Honourable John Rolph, M.D. 1793-1870",
+    "match": "exact"
+  },
+  {
+    "heritage_title": "St. Thomas' Church 1824",
+    "local_title": "St. Thomas' Church 1824",
+    "match": "exact"
+  },
+  {
+    "heritage_title": "Quaker Settlement at Sparta, The",
+    "local_title": "The Quaker Settlement at Sparta",
+    "match": "exact"
+  },
+  {
+    "heritage_title": "Colonel the Hon. Thomas Talbot 1771-1853",
+    "local_title": "Colonel The Honourable Thomas Talbot 1771-1853",
+    "match": "fuzzy"
+  },
+  {
+    "heritage_title": "Talbot Road, The",
+    "local_title": "The Talbot Road",
+    "match": "exact"
+  },
+  {
+    "heritage_title": "Founding of Aylmer, The",
+    "local_title": "The Founding of Aylmer",
+    "match": "exact"
+  },
+  {
+    "heritage_title": "Lieutenant-Colonel Mahlon Burwell 1783-1846",
+    "local_title": "Lieutenant-Colonel Mahlon Burwell 1783-1846",
+    "match": "exact"
+  },
+  {
+    "heritage_title": "Port Burwell Lighthouse 1840",
+    "local_title": "Port Burwell Lighthouse 1840",
+    "match": "exact"
+  },
+  {
+    "heritage_title": "Lieutenant-Colonel John Bostwick 1780-1849",
+    "local_title": "Lieutenant-Colonel John Bostwick 1780-1849",
+    "match": "exact"
+  },
+  {
+    "heritage_title": "London and Port Stanley Railway, The",
+    "local_title": "The London and Port Stanley Railway",
+    "match": "exact"
+  },
+  {
+    "heritage_title": "Founding of Springfield, The",
+    "local_title": "The Founding of Springfield",
+    "match": "exact"
+  },
+  {
+    "heritage_title": "Siege of Detroit 1763, The",
+    "local_title": "The Siege of Detroit 1763",
+    "match": "exact"
+  },
+  {
+    "heritage_title": "District Court House and Gaol",
+    "local_title": "Johnstown District Court House and Gaol",
+    "match": "fuzzy"
+  },
+  {
+    "heritage_title": "French Settlement on the South Shore",
+    "local_title": "French Settlement on the South Shore",
+    "match": "exact"
+  },
+  {
+    "heritage_title": "Honourable Alexander Grant 1734-1813, The",
+    "local_title": "The Honourable Alexander Grant 1734-1813",
+    "match": "exact"
+  },
+  {
+    "heritage_title": "Great Western Railway, The",
+    "local_title": "The Great Western Railway",
+    "match": "exact"
+  },
+  {
+    "heritage_title": "Hull's Landing 1812",
+    "local_title": "Hull's Landing 1812",
+    "match": "exact"
+  },
+  {
+    "heritage_title": "William Dummer Powell 1755-1834",
+    "local_title": "William Dummer Powell 1755-1834",
+    "match": "exact"
+  },
+  {
+    "heritage_title": "Colonel Arthur Rankin 1816-1893",
+    "local_title": "Colonel Arthur Rankin 1816-1893",
+    "match": "exact"
+  },
+  {
+    "heritage_title": "St. John's Church",
+    "local_title": "St. Johns",
+    "match": "fuzzy"
+  },
+  {
+    "heritage_title": "Sandwich First Baptist Church 1851",
+    "local_title": "The Sandwich First Baptist Church 1851",
+    "match": "exact"
+  },
+  {
+    "heritage_title": "Battle of Windsor 1838, The",
+    "local_title": "The Battle of Windsor 1838",
+    "match": "exact"
+  },
+  {
+    "heritage_title": "Capture of the \"Anne\" 1838, The",
+    "local_title": "Capture of the \"Anne\" 1838",
+    "match": "exact"
+  },
+  {
+    "heritage_title": "Bellevue 1816",
+    "local_title": "\"Bellevue\" 1816",
+    "match": "exact"
+  },
+  {
+    "heritage_title": "Bois Blanc Island Blockhouses",
+    "local_title": "Bois Blanc Island Blockhouses",
+    "match": "exact"
+  },
+  {
+    "heritage_title": "Lieutenant-Colonel William Caldwell",
+    "local_title": "Lieutenant-Colonel William Caldwell",
+    "match": "exact"
+  },
+  {
+    "heritage_title": "Skirmishes at the Canard River",
+    "local_title": "Skirmishes at the Canard River",
+    "match": "exact"
+  },
+  {
+    "heritage_title": "Christ Church 1819",
+    "local_title": "Christ Church 1819",
+    "match": "exact"
+  },
+  {
+    "heritage_title": "\"Philo Parsons\" Incident, The",
+    "local_title": "The \"Philo Parsons\" Incident",
+    "match": "exact"
+  },
+  {
+    "heritage_title": "Founding of Belle River, The",
+    "local_title": "The Founding of Belle River",
+    "match": "exact"
+  },
+  {
+    "heritage_title": "First Baptist Church, Puce",
+    "local_title": "First Baptist Church, Puce",
+    "match": "exact"
+  },
+  {
+    "heritage_title": "Founding of Stoney Point, The",
+    "local_title": "The Founding of Stoney Point",
+    "match": "exact"
+  },
+  {
+    "heritage_title": "Fighting Island 1838",
+    "local_title": "Fighting Island 1838",
+    "match": "exact"
+  },
+  {
+    "heritage_title": "Battle of Pelee Island 1838, The",
+    "local_title": "The Battle of Pelee Island 1838",
+    "match": "exact"
+  },
+  {
+    "heritage_title": "Development of Pelee Island, The",
+    "local_title": "The Development of Pelee Island",
+    "match": "exact"
+  },
+  {
+    "heritage_title": "Charles Rankin 1797-1886",
+    "local_title": "Charles Rankin 1797-1886",
+    "match": "exact"
+  },
+  {
+    "heritage_title": "Craigleith Shale Oil Works 1859, The",
+    "local_title": "The Craigleith Shale Oil Works 1859",
+    "match": "exact"
+  },
+  {
+    "heritage_title": "Sinking of the Mary Ward 1872, The",
+    "local_title": "The Sinking of the \"Mary Ward\"",
+    "match": "fuzzy"
+  },
+  {
+    "heritage_title": "Nellie L. McClung",
+    "local_title": "Nellie L. McClung",
+    "match": "exact"
+  },
+  {
+    "heritage_title": "Toronto-Sydenham Road, The",
+    "local_title": "The Toronto-Sydenham Road",
+    "match": "exact"
+  },
+  {
+    "heritage_title": "Founding of Hanover, The",
+    "local_title": "The Founding of Hanover",
+    "match": "exact"
+  },
+  {
+    "heritage_title": "Frederick Stanley Haines 1879-1960",
+    "local_title": "Frederick Stanley Haines 1879-1960",
+    "match": "exact"
+  },
+  {
+    "heritage_title": "Founding of Meaford",
+    "local_title": "Founding of Meaford",
+    "match": "exact"
+  }
+]

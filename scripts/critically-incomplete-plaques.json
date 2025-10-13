@@ -1,0 +1,117 @@
+[
+  {
+    "id": "Plaque_Brant19",
+    "url": "https://www.ontarioplaques.com/Plaques/Plaque_Brant19.html",
+    "canonical_url": null,
+    "title": null,
+    "meta_description": "A photographic collection of Ontario's historical plaques including plaque photo, location map, plaque text, links to related sites and visitor comments.",
+    "location_text": null,
+    "location_hierarchy": [],
+    "coordinates_text": null,
+    "latitude": null,
+    "longitude": null,
+    "map_image": null,
+    "plaque_text": null,
+    "related_links": [],
+    "subject_links": [],
+    "more_links": [],
+    "location_directory_links": [],
+    "photos": [],
+    "source_directories": [
+      "https://www.ontarioplaques.com/Locations/Location_DirectoryBrant.html"
+    ],
+    "scraped_at": "2025-10-12T22:18:08.734474+00:00"
+  },
+  {
+    "id": "Plaque_Hamilton30",
+    "url": "https://www.ontarioplaques.com/Plaques/Plaque_Hamilton30.html",
+    "canonical_url": null,
+    "title": null,
+    "meta_description": null,
+    "location_text": null,
+    "location_hierarchy": [],
+    "coordinates_text": null,
+    "latitude": null,
+    "longitude": null,
+    "map_image": null,
+    "plaque_text": null,
+    "related_links": [],
+    "subject_links": [],
+    "more_links": [],
+    "location_directory_links": [],
+    "photos": [],
+    "source_directories": [
+      "https://www.ontarioplaques.com/Locations/Location_DirectoryHamilton.html"
+    ],
+    "scraped_at": "2025-10-12T22:18:13.858374+00:00"
+  },
+  {
+    "id": "Plaque_Leeds16",
+    "url": "https://www.ontarioplaques.com/Plaques/Plaque_Leeds16.html",
+    "canonical_url": null,
+    "title": null,
+    "meta_description": null,
+    "location_text": null,
+    "location_hierarchy": [],
+    "coordinates_text": null,
+    "latitude": null,
+    "longitude": null,
+    "map_image": null,
+    "plaque_text": null,
+    "related_links": [],
+    "subject_links": [],
+    "more_links": [],
+    "location_directory_links": [],
+    "photos": [],
+    "source_directories": [
+      "https://www.ontarioplaques.com/Locations/Location_DirectoryLeeds.html"
+    ],
+    "scraped_at": "2025-10-12T22:18:16.255265+00:00"
+  },
+  {
+    "id": "Plaque_Leeds36",
+    "url": "https://www.ontarioplaques.com/Plaques/Plaque_Leeds36.html",
+    "canonical_url": null,
+    "title": null,
+    "meta_description": null,
+    "location_text": null,
+    "location_hierarchy": [],
+    "coordinates_text": null,
+    "latitude": null,
+    "longitude": null,
+    "map_image": null,
+    "plaque_text": null,
+    "related_links": [],
+    "subject_links": [],
+    "more_links": [],
+    "location_directory_links": [],
+    "photos": [],
+    "source_directories": [
+      "https://www.ontarioplaques.com/Locations/Location_DirectoryLeeds.html"
+    ],
+    "scraped_at": "2025-10-12T22:18:16.486775+00:00"
+  },
+  {
+    "id": "Plaque_Niagara36",
+    "url": "https://www.ontarioplaques.com/Plaques/Plaque_Niagara36.html",
+    "canonical_url": null,
+    "title": null,
+    "meta_description": null,
+    "location_text": null,
+    "location_hierarchy": [],
+    "coordinates_text": null,
+    "latitude": null,
+    "longitude": null,
+    "map_image": null,
+    "plaque_text": null,
+    "related_links": [],
+    "subject_links": [],
+    "more_links": [],
+    "location_directory_links": [],
+    "photos": [],
+    "source_directories": [
+      "https://www.ontarioplaques.com/Locations/Location_DirectoryNiagara.html"
+    ],
+    "scraped_at": "2025-10-12T22:18:18.968833+00:00"
+  }
+]

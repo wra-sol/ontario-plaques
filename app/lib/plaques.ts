@@ -51,8 +51,8 @@ export type Plaque = {
   id: string;
   title: string;
   municipality: string;
-  latitude: number;
-  longitude: number;
+  latitude?: number;
+  longitude?: number;
   plaqueText: string;
   locationText?: string;
   coordinatesText?: string;
@@ -79,7 +79,12 @@ export function normalizePlaque(raw: RawPlaque): Plaque | null {
   const longitude = coerceNumber(raw.longitude ?? raw.lon ?? raw.lng);
   const title = (raw.title ?? '').trim();
   const id = String(raw.id ?? title).trim();
-  if (!id || !title || latitude == null || longitude == null) return null;
+  
+  // Require ID and title, but coordinates are optional
+  if (!id || !title) return null;
+  
+  // Skip if coordinates are partially present (must have both or neither)
+  if ((latitude == null) !== (longitude == null)) return null;
   
   // Extract municipality from location_hierarchy or fallback to legacy fields
   const municipality = (

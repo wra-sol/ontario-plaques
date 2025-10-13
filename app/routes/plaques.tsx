@@ -314,7 +314,7 @@ export default function PlaquesRoute() {
                   height: '100%'
                 }}
               >
-                {p.imageUrl && (
+{/*                 {p.imageUrl && (
                   <Link to={`/plaques/${p.id}`} prefetch='intent' style={{ textDecoration: 'none' }}>
                     <Image 
                       src={p.imageUrl} 
@@ -323,7 +323,7 @@ export default function PlaquesRoute() {
                       style={{ marginBottom: 12, cursor: 'pointer' }}
                     />
                   </Link>
-                )}
+                )} */}
                 
                 {matchInfo && (
                   <div style={{ marginBottom: 8 }}>

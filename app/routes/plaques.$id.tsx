@@ -105,44 +105,50 @@ export default function PlaqueDetailRoute() {
         </Stack>
       )}
 
-      <Box border bg="light" p={20} mb={32}>
-        <h3 style={{ fontSize: "1.1rem", marginBottom: "16px", color: 'var(--green)' }}>Location Details</h3>
-        <div className="list">
-        
-        {p.locationText && (
-          <div className="row">
-            <div>Location</div>
-            <div>{p.locationText}</div>
-          </div>
-        )}
-        
-        {p.coordinatesText && (
-          <div className="row">
-            <div>Coordinates</div>
-            <div>
-              <a
-                href={`https://maps.google.com/?q=${p.latitude},${p.longitude}`}
-                target="_blank"
-                rel="noreferrer"
-                style={{ color: "var(--green)", fontWeight: 600 }}
-              >
-                {p.coordinatesText}
-              </a>
+      {(p.locationText || p.latitude != null) && (
+        <Box border bg="light" p={20} mb={32}>
+          <h3 style={{ fontSize: "1.1rem", marginBottom: "16px", color: 'var(--green)' }}>Location Details</h3>
+          <div className="list">
+          
+          {p.locationText && (
+            <div className="row">
+              <div>Location</div>
+              <div>{p.locationText}</div>
             </div>
+          )}
+          
+          {p.coordinatesText && p.latitude != null && p.longitude != null && (
+            <div className="row">
+              <div>Coordinates</div>
+              <div>
+                <a
+                  href={`https://maps.google.com/?q=${p.latitude},${p.longitude}`}
+                  target="_blank"
+                  rel="noreferrer"
+                  style={{ color: "var(--green)", fontWeight: 600 }}
+                >
+                  {p.coordinatesText}
+                </a>
+              </div>
+            </div>
+          )}
+          
+          {p.latitude != null && (
+            <div className="row">
+              <div>Latitude</div>
+              <div>{p.latitude}</div>
+            </div>
+          )}
+          
+          {p.longitude != null && (
+            <div className="row">
+              <div>Longitude</div>
+              <div>{p.longitude}</div>
+            </div>
+          )}
           </div>
-        )}
-        
-        <div className="row">
-          <div>Latitude</div>
-          <div>{p.latitude}</div>
-        </div>
-        
-        <div className="row">
-          <div>Longitude</div>
-          <div>{p.longitude}</div>
-        </div>
-        </div>
-      </Box>
+        </Box>
+      )}
 
       {p.relatedLinks && p.relatedLinks.length > 0 && (
         <Box border bg="light" p={20} mb={32}>
