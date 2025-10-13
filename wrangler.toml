@@ -1,5 +1,11 @@
 name = "ontario-plaques"
+main = "worker.ts"
 compatibility_date = "2024-10-01"
+
+# Assets configuration for serving static files
+[assets]
+directory = "./build/client"
+binding = "ASSETS"
 
 [observability]
 enabled = true

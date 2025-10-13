@@ -4,11 +4,11 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "react-router dev",
+    "dev": "npm run build && wrangler dev",
     "build": "react-router build",
-    "start": "react-router-serve ./build/server/index.js",
+    "start": "wrangler dev",
     "typecheck": "react-router typegen && tsc --noEmit",
-    "preview": "wrangler pages dev ./build/client"
+    "deploy": "npm run build && wrangler deploy"
   },
   "dependencies": {
     "cheerio": "^1.1.2",
