@@ -42,8 +42,10 @@ export async function loader({ params }: { params: { id?: string } }) {
 }
 
 export default function PlaqueDetailRoute() {
-  const p = useLoaderData() as Plaque;
-  return (
+  let p = useLoaderData() as Plaque;
+  p = { ...p, relatedLinks: p.relatedLinks?.map((link) => ({...link, url: link.url.replace('https://www.ontarioplaques.com/Plaques/', '/plaques/').replace('.html', '')})) ?? [] };
+  console.log(p.relatedLinks);
+    return (
     <Card as="section">
       <div style={{ marginBottom: 32 }}>
         <h1 style={{ color: "var(--green)", marginBottom: 16, fontSize: '2rem' }}>{p.title}</h1>
@@ -148,9 +150,9 @@ export default function PlaqueDetailRoute() {
           <ul style={{ marginLeft: 20, lineHeight: 1.8 }}>
             {p.relatedLinks.map((link, idx) => (
               <li key={idx} style={{ marginBottom: 8 }}>
-                <a href={link.url} target="_blank" rel="noreferrer" style={{ color: "var(--green)", fontWeight: 600 }}>
-                  {link.title} →
-                </a>
+                <Link to={link.url} rel="noreferrer" style={{ color: "var(--green)", fontWeight: 600 }}>
+                  {link.title}
+                </Link>
               </li>
             ))}
           </ul>
@@ -158,11 +160,11 @@ export default function PlaqueDetailRoute() {
       )}
 
       <Stack direction="row" gap={12} wrap style={{ marginTop: 32, paddingTop: 24, borderTop: '2px solid var(--light)' }}>
-        <Button to="/plaques">
+        <Button to="/plaques">  
           ← Back to All Plaques
         </Button>
         {p.sourceUrl && (
-          <Button href={p.sourceUrl} variant="secondary">
+          <Button to={p.sourceUrl} variant="secondary">
             View Original Source →
           </Button>
         )}

@@ -62,7 +62,18 @@ body {
   color: var(--green);
   transition: color 0.3s ease;
 }
-
+a {
+  color: var(--green);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+a:hover {
+  color: var(--green-hover);
+}
+a:focus-visible {
+  outline: 2px solid var(--green);
+  outline-offset: 2px;
+}
 .nav { display: flex; gap: 16px; }
 .nav a { 
   color: var(--dark); 
