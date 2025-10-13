@@ -10,6 +10,8 @@ interface ButtonProps {
   onClick?: () => void;
   className?: string;
   style?: React.CSSProperties;
+  disabled?: boolean;
+  rest?: any;
 }
 
 export function Button({ 
@@ -20,14 +22,16 @@ export function Button({
   type = 'button',
   onClick,
   className = '',
-  style = {}
+  style = {},
+  disabled = false,
+  ...rest
 }: ButtonProps) {
   const baseClass = variant === 'secondary' ? 'button secondary' : 'button';
   const classes = `${baseClass} ${className}`.trim();
   
   if (to) {
     return (
-      <Link to={to} className={classes} style={{ textDecoration: 'none', ...style }}>
+      <Link to={to} className={classes} style={{ textDecoration: 'none', ...style }} {...rest}>
         {children}
       </Link>
     );
@@ -35,14 +39,14 @@ export function Button({
   
   if (href) {
     return (
-      <a href={href} className={classes} style={{ textDecoration: 'none', ...style }} target="_blank" rel="noreferrer">
+      <a href={href} className={classes} style={{ textDecoration: 'none', ...style }} target="_blank" rel="noreferrer" {...rest}>
         {children}
       </a>
     );
   }
   
   return (
-    <button type={type} onClick={onClick} className={classes} style={style}>
+    <button type={type} onClick={onClick} className={classes} style={style} disabled={disabled} {...rest}>
       {children}
     </button>
   );
