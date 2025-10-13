@@ -246,7 +246,13 @@ export function normalizePlaque(raw: RawPlaque): Plaque | null {
 export async function fetchPlaques(): Promise<Plaque[]> {
   // Try to fetch external dataset from public/data first
   try {
-    const res = await fetch('/data/ontario_plaques.json', { headers: { 'Accept': 'application/json' } });
+    const isServer = typeof document === 'undefined';
+    const datasetPath = '/data/ontario_plaques.json';
+    const absoluteUrl = isServer && (globalThis as any)?.__ORIGIN__
+      ? new URL(datasetPath, (globalThis as any).__ORIGIN__).toString()
+      : datasetPath;
+
+    const res = await fetch(absoluteUrl, { headers: { 'Accept': 'application/json' } });
     if (res.ok) {
       const raw = (await res.json()) as RawPlaque[];
       const list = raw.map(normalizePlaque).filter(Boolean) as Plaque[];
