@@ -83,7 +83,8 @@ export function Layout({ children }: { children: React.ReactNode }) {
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        {/* Title is provided via route meta */}
+        <title>Ontario Historical Plaques</title>
+        <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
         <Meta />
         <style dangerouslySetInnerHTML={{ __html: `
           .no-transitions,
