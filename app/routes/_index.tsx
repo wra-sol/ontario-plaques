@@ -37,8 +37,8 @@ function cleanMunicipalityName(name: string | null | undefined): string {
   return cleaned;
 }
 
-export async function loader({ request }: { request: Request }) {
-  const plaques = await fetchPlaques(request);
+export async function loader({ request, context }: { request: Request; context: any }) {
+  const plaques = await fetchPlaques(request, context?.fetch);
   
   // Select a plaque based on the day of year for consistent daily rotation
   const now = new Date();

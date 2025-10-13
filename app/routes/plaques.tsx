@@ -117,7 +117,7 @@ function searchPlaque(plaque: Plaque, query: string): { score: number; matches: 
   return score > 0 ? { score, matches } : null;
 }
 
-export async function loader({ request }: { request: Request }) {
+export async function loader({ request, context }: { request: Request; context: any }) {
   const url = new URL(request.url);
   const q = url.searchParams.get('q')?.toLowerCase().trim() ?? '';
   const municipality = url.searchParams.get('municipality')?.trim() ?? '';
@@ -127,7 +127,7 @@ export async function loader({ request }: { request: Request }) {
   const pageSizeParam = parseInt(url.searchParams.get('pageSize') ?? '24', 10);
   const pageSize = Number.isFinite(pageSizeParam) && pageSizeParam > 0 ? Math.min(Math.max(pageSizeParam, 6), 96) : 24;
   
-  const plaques = await fetchPlaques(request);
+  const plaques = await fetchPlaques(request, context?.fetch);
   
   // Apply filters
   let filtered = plaques;

@@ -243,7 +243,7 @@ export function normalizePlaque(raw: RawPlaque): Plaque | null {
   };
 }
 
-export async function fetchPlaques(request?: Request): Promise<Plaque[]> {
+export async function fetchPlaques(request?: Request, customFetch?: typeof fetch): Promise<Plaque[]> {
   // Build the full URL for the data file
   let dataUrl = '/data/ontario_plaques.json';
   
@@ -253,8 +253,11 @@ export async function fetchPlaques(request?: Request): Promise<Plaque[]> {
     dataUrl = `${url.origin}/data/ontario_plaques.json`;
   }
   
+  // Use custom fetch if provided (from load context), otherwise use global fetch
+  const fetchFn = customFetch || fetch;
+  
   try {
-    const res = await fetch(dataUrl, { headers: { 'Accept': 'application/json' } });
+    const res = await fetchFn(dataUrl, { headers: { 'Accept': 'application/json' } });
     if (res.ok) {
       const raw = (await res.json()) as RawPlaque[];
       const list = raw.map(normalizePlaque).filter(Boolean) as Plaque[];

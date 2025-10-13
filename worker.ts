@@ -30,9 +30,24 @@ export default {
       }
 
       // Handle all other requests via SSR using React Router's request handler
+      // Provide a custom fetch that uses the ASSETS binding
+      const assetFetch = (input: RequestInfo | URL, init?: RequestInit) => {
+        if (typeof input === 'string' || input instanceof URL) {
+          const assetUrl = input.toString();
+          // For internal asset requests, use the ASSETS binding
+          if (assetUrl.startsWith('/') || assetUrl.includes(new URL(request.url).origin)) {
+            const assetRequest = new Request(assetUrl, init);
+            return env.ASSETS.fetch(assetRequest);
+          }
+        }
+        // For external requests, use global fetch
+        return fetch(input, init);
+      };
+
       const loadContext = {
         env,
         ctx,
+        fetch: assetFetch,
       };
       
       // Create the React Router request handler with the server build
