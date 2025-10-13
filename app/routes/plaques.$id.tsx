@@ -34,8 +34,8 @@ function cleanMunicipalityName(name: string | null | undefined): string {
   return cleaned;
 }
 
-export async function loader({ params }: { params: { id?: string } }) {
-  const list = await fetchPlaques();
+export async function loader({ params, request }: { params: { id?: string }; request: Request }) {
+  const list = await fetchPlaques(request);
   const plaque = list.find((p) => p.id === (params.id ?? ""));
   if (!plaque) {
     throw new Response("Not Found", { status: 404 });

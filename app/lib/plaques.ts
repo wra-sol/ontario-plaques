@@ -243,18 +243,29 @@ export function normalizePlaque(raw: RawPlaque): Plaque | null {
   };
 }
 
-export async function fetchPlaques(): Promise<Plaque[]> {
-  // Try to fetch external dataset from public/data first
+export async function fetchPlaques(request?: Request): Promise<Plaque[]> {
+  // Build the full URL for the data file
+  let dataUrl = '/data/ontario_plaques.json';
+  
+  // In SSR context with a request, use the request's origin for absolute URL
+  if (typeof window === 'undefined' && request) {
+    const url = new URL(request.url);
+    dataUrl = `${url.origin}/data/ontario_plaques.json`;
+  }
+  
   try {
-    const res = await fetch('/data/ontario_plaques.json', { headers: { 'Accept': 'application/json' } });
+    const res = await fetch(dataUrl, { headers: { 'Accept': 'application/json' } });
     if (res.ok) {
       const raw = (await res.json()) as RawPlaque[];
       const list = raw.map(normalizePlaque).filter(Boolean) as Plaque[];
       if (list.length) return list;
     }
-  } catch (_) {
-    // ignore, fall back
+  } catch (err) {
+    if (typeof window === 'undefined') {
+      console.error('Failed to fetch plaques data in SSR:', err);
+    }
   }
+  
   // Fallback to bundled sample
   const sample = (await import('../data/plaques.json')).default as any[];
   return sample.map(s => normalizePlaque(s as RawPlaque)).filter(Boolean) as Plaque[];

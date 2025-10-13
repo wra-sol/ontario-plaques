@@ -5,7 +5,8 @@ import {
   Outlet, 
   Scripts, 
   ScrollRestoration, 
-  useLoaderData 
+  useLoaderData, 
+  useRouteError
 } from 'react-router';
 import type { MetaFunction } from 'react-router';
 import { buildMeta, SITE_NAME, DEFAULT_DESCRIPTION } from './lib/seo';
@@ -72,14 +73,8 @@ function ThemeScript() {
 }
 
 export function Layout({ children }: { children: React.ReactNode }) {
-  const data = useLoaderData<{ theme: Theme }>();
-  
-  // Resolve theme for SSR - if system, we can't know on server, so use light as default
-  // The client script will immediately fix this on load
-  const ssrTheme = data.theme === 'system' ? 'light' : data.theme;
-  
   return (
-    <html lang="en" data-theme={ssrTheme} className="no-transitions">
+    <html lang="en" data-theme="light" className="no-transitions">
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -119,6 +114,17 @@ export default function Root() {
         </div>
       </main>
       <Footer />
+    </div>
+  );
+}
+
+export function ErrorBoundary() {
+  const error = useRouteError();  
+  return (
+    <div className="container">
+      <h1>Error</h1>
+      <pre>{JSON.stringify(error, null, 2)}</pre>
+      <p>Sorry, an error occurred while loading the page.</p>
     </div>
   );
 }

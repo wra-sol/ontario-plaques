@@ -12,10 +12,11 @@ export type BuildMetaInput = {
 export const SITE_NAME = 'Ontario Historical Plaques';
 export const DEFAULT_DESCRIPTION =
   "Discover Ontario's historical plaques: locations, stories, and photos.";
+export const DEFAULT_OG_IMAGE = '/favicon.svg'; // Fallback OG image
 
-// Optionally set your production site URL in Vite env
-// e.g. VITE_SITE_URL=https://yourdomain.tld
-export const SITE_URL = import.meta.env.VITE_SITE_URL as string | undefined;
+// Set your production site URL - can be overridden with VITE_SITE_URL env var
+export const SITE_URL = import.meta.env.VITE_SITE_URL as string | undefined || 
+  (typeof window !== 'undefined' ? window.location.origin : undefined);
 
 function absolutize(urlOrPath: string | undefined): string | undefined {
   if (!urlOrPath) return undefined;
@@ -39,7 +40,8 @@ export function buildMeta(input: BuildMetaInput): MetaDescriptor[] {
   const description = input.description || DEFAULT_DESCRIPTION;
   const ogType = input.type || 'website';
   const canonical = buildCanonical(input.pathname || '/');
-  const imageAbsolute = absolutize(input.imageUrl);
+  // Use provided image, or fall back to default OG image
+  const imageAbsolute = absolutize(input.imageUrl || DEFAULT_OG_IMAGE);
 
   const twitterCard = imageAbsolute ? 'summary_large_image' : 'summary';
 
