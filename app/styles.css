@@ -1,3 +1,9 @@
+/* Disable all transitions during initial page load to prevent theme flash */
+.no-transitions,
+.no-transitions * {
+  transition: none !important;
+}
+
 /* Base theme: light gray, white, Kelly green, dark gray; no rounding */
 :root {
   --green: #198f3a; /* Kelly-ish green */
@@ -7,6 +13,22 @@
   --light: #f2f2f2; /* light gray */
   --white: #ffffff;
   --gap: 8px; /* tight spacing */
+  
+  /* Transition properties */
+  color-scheme: light;
+}
+
+/* Dark mode theme */
+[data-theme="dark"] {
+  --green: #52a56b; /* Muted green for dark mode - easier on eyes */
+  --green-hover: #5db577; /* Slightly brighter on hover */
+  --dark: #e8e8e8; /* light text for dark mode */
+  --mid: #a8a8a8;  /* lighter gray for better readability */
+  --light: #121212; /* dark background - true dark for OLED */
+  --white: #1e1e1e; /* slightly lighter for cards */
+  
+  /* Better color scheme for dark mode */
+  color-scheme: dark;
 }
 
 * { box-sizing: border-box; }
@@ -16,6 +38,7 @@ body {
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   color: var(--dark);
   background: var(--light);
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 /* Layout */
@@ -23,6 +46,7 @@ body {
 .header {
   border-bottom: 3px solid var(--dark);
   background: var(--white);
+  transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 .header-inner { display: grid; grid-template-columns: 1fr auto; align-items: center; gap: var(--gap); }
 .brand { 
@@ -32,8 +56,12 @@ body {
   text-decoration: none; 
   font-weight: 700; 
   letter-spacing: 0.5px;
+  transition: color 0.3s ease;
 }
-.brand strong { color: var(--green); }
+.brand strong { 
+  color: var(--green);
+  transition: color 0.3s ease;
+}
 
 .nav { display: flex; gap: 16px; }
 .nav a { 
@@ -41,6 +69,7 @@ body {
   text-decoration: none; 
   padding: 16px 0; 
   border-bottom: 3px solid transparent;
+  transition: color 0.2s ease, border-color 0.2s ease;
 }
 .nav a:hover { color: var(--green); }
 .nav a.active { border-color: var(--green); color: var(--green); }
@@ -56,6 +85,7 @@ body {
   background: var(--white); 
   border: 3px solid var(--dark); 
   padding: 16px;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 16px; }
 .list { display: grid; gap: 8px; }
@@ -89,6 +119,7 @@ a:focus-visible {
   letter-spacing: 1px;
   font-weight: 600;
   display: inline-block;
+  transition: background-color 0.2s ease;
 }
 .button:hover { 
   background: var(--green-hover);
@@ -101,15 +132,89 @@ a:focus-visible {
 .button.secondary:hover { background: #333; }
 
 .input { 
-  border: 3px solid var(--dark); 
+  border: 2px solid var(--dark); 
   background: var(--white); 
   padding: 8px 10px; 
   width: 100%;
   font-family: inherit;
+  font-size: 14px;
+  color: var(--dark);
+  transition: background-color 0.3s ease, border-color 0.2s ease, color 0.3s ease;
 }
 .input:focus {
   outline: none;
   border-color: var(--green);
+}
+.input::placeholder {
+  color: var(--mid);
+  opacity: 0.7;
+}
+
+/* Labels */
+label {
+  display: block;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--mid);
+  margin-bottom: 6px;
+}
+
+/* Filter specific styles */
+.filter-card {
+  background: var(--white);
+  border: 2px solid var(--dark);
+  padding: 16px;
+}
+
+.filter-label {
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--mid);
+  margin-bottom: 4px;
+  display: block;
+}
+
+.filter-input {
+  border: 2px solid var(--dark);
+  background: var(--white);
+  padding: 6px 8px;
+  width: 100%;
+  font-family: inherit;
+  font-size: 13px;
+  color: var(--dark);
+  transition: background-color 0.3s ease, border-color 0.2s ease, color 0.3s ease;
+}
+
+.filter-input:focus {
+  outline: none;
+  border-color: var(--green);
+}
+
+.filter-button {
+  background: var(--dark);
+  color: var(--white);
+  border: 0;
+  padding: 6px 10px;
+  cursor: pointer;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-weight: 600;
+  transition: background-color 0.2s ease;
+}
+
+.filter-button:hover {
+  background: #333;
+}
+
+.filter-hint {
+  font-size: 10px;
+  color: var(--mid);
+  margin-top: 4px;
 }
 
 /* Footer */
@@ -119,12 +224,14 @@ a:focus-visible {
   color: var(--mid); 
   padding: 16px 0; 
   margin-top: auto;
+  transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
 }
 
 /* Image borders */
 img {
   border: 3px solid var(--dark);
   display: block;
+  transition: border-color 0.3s ease;
 }
 
 /* Empty states */
@@ -136,4 +243,88 @@ img {
 .empty-state h3 {
   color: var(--dark);
   margin-bottom: 12px;
+}
+
+/* Theme toggle dropdown */
+.theme-toggle {
+  position: relative;
+  display: inline-block;
+}
+
+.theme-toggle-button {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  background: transparent;
+  border: 2px solid var(--dark);
+  padding: 6px 10px;
+  cursor: pointer;
+  font-size: 11px;
+  font-family: inherit;
+  color: var(--dark);
+  line-height: 1;
+  transition: background-color 0.2s ease, border-color 0.3s ease;
+}
+
+.theme-toggle-button:hover {
+  background: var(--light);
+}
+
+.theme-toggle-button:focus-visible {
+  outline: 2px solid var(--green);
+  outline-offset: 2px;
+}
+
+.theme-toggle-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.theme-toggle-button svg {
+  flex-shrink: 0;
+}
+
+.theme-toggle-menu {
+  position: absolute;
+  top: calc(100% + 4px);
+  right: 0;
+  min-width: 140px;
+  background: var(--white);
+  border: 2px solid var(--dark);
+  z-index: 1000;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.theme-toggle-option {
+  display: block;
+  width: 100%;
+  padding: 8px 12px;
+  border: none;
+  background: transparent;
+  color: var(--dark);
+  font-size: 11px;
+  font-family: inherit;
+  text-align: left;
+  cursor: pointer;
+  transition: background-color 0.15s ease, color 0.15s ease;
+  border-bottom: 1px solid var(--light);
+}
+
+.theme-toggle-option:last-child {
+  border-bottom: none;
+}
+
+.theme-toggle-option:hover {
+  background: var(--light);
+  color: var(--green);
+}
+
+.theme-toggle-option.active {
+  background: var(--green);
+  color: var(--white);
+}
+
+.theme-toggle-option.active:hover {
+  background: var(--green-hover);
+  color: var(--white);
 }

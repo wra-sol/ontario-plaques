@@ -5,8 +5,10 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview --port 4173",
+    "build": "npm run build:client && npm run build:server && node scripts/build.js",
+    "build:client": "vite build",
+    "build:server": "vite build --ssr",
+    "preview": "wrangler pages dev dist/client",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {

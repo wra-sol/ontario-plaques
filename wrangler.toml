@@ -1,7 +1,7 @@
 name = "ontario-historical-plaques"
 main = "worker.js"
 compatibility_date = "2024-10-01"
-assets = { directory = "dist", binding = "ASSETS" }
+assets = { directory = "dist/client", binding = "ASSETS" }
 
 [dev]
 port = 8787

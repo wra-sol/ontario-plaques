@@ -10,4 +10,5 @@ export { Image } from './Image';
 export { Text } from './Text';
 export { default as Nav } from './Nav';
 export { default as Footer } from './Footer';
+export { default as ThemeToggle } from './ThemeToggle';
 

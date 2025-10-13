@@ -57,16 +57,6 @@ export default function Index() {
         <p style={{ fontSize: '1.1rem', color: 'var(--mid)', marginBottom: 24 }}>
           Yours to discover.
         </p>
-        <div style={{ 
-          display: 'inline-block', 
-          padding: '8px 16px', 
-          backgroundColor: 'var(--light)', 
-          border: '2px solid var(--green)' 
-        }}>
-          <TextComponent weight={600} color="green">
-            {totalCount} historical plaques documented
-          </TextComponent>
-        </div>
       </div>
       
       {featured && (

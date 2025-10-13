@@ -1,15 +1,24 @@
 import { Link, NavLink } from 'react-router-dom';
+import ThemeToggle from './ThemeToggle';
+import type { Theme } from '../lib/theme';
 
-export default function Nav() {
+interface NavProps {
+  theme: Theme;
+}
+
+export default function Nav({ theme }: NavProps) {
   return (
     <div className="header">
       <div className="container header-inner">
         <Link className="brand" to="/">ONTARIO <strong>PLAQUES</strong></Link>
-        <nav className="nav">
-          <NavLink to="/" end>Home</NavLink>
-          <NavLink to="/plaques">Plaques</NavLink>
-          <NavLink to="/about">About</NavLink>
-        </nav>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
+          <nav className="nav">
+            <NavLink to="/" end prefetch='intent'>Home</NavLink>
+            <NavLink to="/plaques" prefetch='intent'>Plaques</NavLink>
+            <NavLink to="/about" prefetch='intent'>About</NavLink>
+          </nav>
+          <ThemeToggle theme={theme} />
+        </div>
       </div>
     </div>
   );

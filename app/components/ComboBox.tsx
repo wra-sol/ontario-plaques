@@ -170,18 +170,19 @@ export function ComboBox({
           alignItems: 'center',
           textAlign: 'left',
           cursor: 'pointer',
-          background: 'white',
+          background: 'var(--white)',
         }}
       >
         <span style={{ 
-          color: selectedValue ? 'var(--text)' : 'var(--mid)',
+          color: selectedValue ? 'var(--dark)' : 'var(--mid)',
           overflow: 'hidden',
           textOverflow: 'ellipsis',
-          whiteSpace: 'nowrap'
+          whiteSpace: 'nowrap',
+          fontFamily: 'monospace, ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace'
         }}>
           {displayValue}
         </span>
-        <span style={{ marginLeft: '8px', flexShrink: 0 }}>▼</span>
+        <span style={{ marginLeft: '8px', flexShrink: 0, color: 'var(--dark)' }}>▼</span>
       </button>
       
       {/* Dropdown */}
@@ -192,15 +193,15 @@ export function ComboBox({
           left: 0,
           right: 0,
           marginTop: '4px',
-          background: 'white',
-          border: '3px solid var(--dark)',
+          background: 'var(--white)',
+          border: '2px solid var(--dark)',
           zIndex: 1000,
           maxHeight: '300px',
           display: 'flex',
           flexDirection: 'column'
         }}>
           {/* Search input */}
-          <div style={{ padding: '8px', borderBottom: '1px solid var(--border)' }}>
+          <div style={{ padding: '8px', borderBottom: '1px solid var(--mid)' }}>
             <input
               ref={inputRef}
               type="text"
@@ -210,8 +211,12 @@ export function ComboBox({
               className="input"
               style={{ 
                 width: '100%',
-                fontSize: '0.9rem',
-                padding: '6px 8px'
+                fontSize: '13px',
+                padding: '6px 8px',
+                border: '2px solid var(--dark)',
+                background: 'var(--white)',
+                color: 'var(--dark)',
+                fontFamily: 'monospace, ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace'
               }}
             />
           </div>
@@ -231,9 +236,10 @@ export function ComboBox({
                 textAlign: 'left',
                 border: 'none',
                 background: !selectedValue ? 'var(--light)' : 'transparent',
+                color: 'var(--dark)',
                 cursor: 'pointer',
                 fontWeight: !selectedValue ? 600 : 400,
-                fontSize: '0.9rem'
+                fontSize: '13px'
               }}
               onMouseEnter={(e) => {
                 if (selectedValue) e.currentTarget.style.background = 'var(--light)';
@@ -257,9 +263,10 @@ export function ComboBox({
                     textAlign: 'left',
                     border: 'none',
                     background: selectedValue === option ? 'var(--light)' : 'transparent',
+                    color: 'var(--dark)',
                     cursor: 'pointer',
                     fontWeight: selectedValue === option ? 600 : 400,
-                    fontSize: '0.9rem'
+                    fontSize: '13px'
                   }}
                   onMouseEnter={(e) => {
                     if (selectedValue !== option) e.currentTarget.style.background = 'var(--light)';
@@ -276,7 +283,7 @@ export function ComboBox({
                 padding: '12px', 
                 textAlign: 'center', 
                 color: 'var(--mid)',
-                fontSize: '0.9rem'
+                fontSize: '13px'
               }}>
                 No matches found
               </div>

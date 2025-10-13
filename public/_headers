@@ -4,3 +4,5 @@
   X-XSS-Protection: 1; mode=block
   Referrer-Policy: no-referrer-when-downgrade
   Permissions-Policy: geolocation=(), microphone=(), camera=()
+  Vary: Cookie
+  Cache-Control: public, max-age=0, must-revalidate

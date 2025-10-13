@@ -162,89 +162,108 @@ export default function PlaquesRoute() {
 
   return (
     <section>
-      <Card style={{ marginBottom: 16 }}>
+      <div className="filter-card" style={{ marginBottom: 16 }}>
         <Form 
           method="get"
           id="search-form"
         >
-          <Stack gap={16}>
-            <Input
-              id="q"
-              name="q"
-              label="Search All Plaques"
-              defaultValue={searchParams.get('q') ?? ''}
-              placeholder="Search by title, location, topics, or plaque text..."
-              style={{ width: '100%', fontSize: '1rem', padding: '10px' }}
-              onChange={(e) => {
-                const form = e.currentTarget.form;
-                if (form) {
-                  // Debounce search input
-                  clearTimeout((window as any).__searchTimeout);
-                  (window as any).__searchTimeout = setTimeout(() => {
-                    submit(form, { replace: true });
-                  }, 300);
-                }
-              }}
-            />
-            <Text size="small" color="mid" style={{ marginTop: -8, fontSize: '0.8rem' }}>
-              Results ranked by relevance. Try searching for a place, historical figure, or topic.
-            </Text>
+          <Stack gap={12}>
+            <div>
+              <label htmlFor="q" className="filter-label">Search All Plaques</label>
+              <Input
+                id="q"
+                name="q"
+                defaultValue={searchParams.get('q') ?? ''}
+                placeholder="Search by title, location, topics, or plaque text..."
+                style={{ width: '100%', fontSize: '13px', padding: '7px 8px', border: '2px solid var(--dark)' }}
+                onChange={(e) => {
+                  const form = e.currentTarget.form;
+                  if (form) {
+                    // Debounce search input
+                    clearTimeout((window as any).__searchTimeout);
+                    (window as any).__searchTimeout = setTimeout(() => {
+                      submit(form, { replace: true });
+                    }, 300);
+                  }
+                }}
+              />
+              <div className="filter-hint">
+                Results ranked by relevance. Try searching for a place, historical figure, or topic.
+              </div>
+            </div>
             
-            <Grid columns="repeat(auto-fit, minmax(250px, 1fr))" gap={16}>
-              <ComboBox
-                id="municipality"
-                name="municipality"
-                label="Municipality"
-                value={searchParams.get('municipality') ?? ''}
-                options={municipalities}
-                placeholder="Search municipalities..."
-                emptyLabel="All Municipalities"
-                onChange={() => {
-                  const form = document.getElementById('search-form') as HTMLFormElement;
-                  if (form) submit(form, { replace: true });
-                }}
-              />
+            <Grid columns="repeat(auto-fit, minmax(240px, 1fr))" gap={12}>
+              <div>
+                <label htmlFor="municipality" className="filter-label">Municipality</label>
+                <ComboBox
+                  id="municipality"
+                  name="municipality"
+                  value={searchParams.get('municipality') ?? ''}
+                  options={municipalities}
+                  placeholder="Search municipalities..."
+                  emptyLabel="All Municipalities"
+                  onChange={() => {
+                    const form = document.getElementById('search-form') as HTMLFormElement;
+                    if (form) submit(form, { replace: true });
+                  }}
+                />
+              </div>
               
-              <ComboBox
-                id="tag"
-                name="tag"
-                label="Subject/Tag"
-                value={searchParams.get('tag') ?? ''}
-                options={tags}
-                placeholder="Search topics..."
-                emptyLabel="All Topics"
-                onChange={() => {
-                  const form = document.getElementById('search-form') as HTMLFormElement;
-                  if (form) submit(form, { replace: true });
-                }}
-              />
+              <div>
+                <label htmlFor="tag" className="filter-label">Subject/Tag</label>
+                <ComboBox
+                  id="tag"
+                  name="tag"
+                  value={searchParams.get('tag') ?? ''}
+                  options={tags}
+                  placeholder="Search topics..."
+                  emptyLabel="All Topics"
+                  onChange={() => {
+                    const form = document.getElementById('search-form') as HTMLFormElement;
+                    if (form) submit(form, { replace: true });
+                  }}
+                />
+              </div>
             </Grid>
             
-            <Stack direction="row" gap={8}>
-              <Button to="/plaques" variant="secondary">Clear All Filters</Button>
-            </Stack>
+            <div>
+              <button
+                type="button"
+                className="filter-button"
+                onClick={() => {
+                  window.location.href = '/plaques';
+                }}
+              >
+                Clear All Filters
+              </button>
+            </div>
           </Stack>
         </Form>
-      </Card>
+      </div>
       
-      <Text size="small" style={{ marginBottom: 16 }}>
-        Showing <strong>{plaques.length}</strong> plaque{plaques.length !== 1 ? 's' : ''}
+      <div style={{ fontSize: '11px', color: 'var(--mid)', marginBottom: 12 }}>
+        Showing <strong style={{ color: 'var(--dark)' }}>{plaques.length}</strong> plaque{plaques.length !== 1 ? 's' : ''}
         {(q || municipality || tag) && (
           <>
-            {' '}with filters: 
-            {q && <span style={{ marginLeft: '4px' }}>search="{q}"</span>}
-            {municipality && <span style={{ marginLeft: '4px' }}>municipality="{municipality}"</span>}
-            {tag && <span style={{ marginLeft: '4px' }}>tag="{tag}"</span>}
+            {' '}• 
+            {q && <span style={{ marginLeft: '4px' }}>search: <strong>"{q}"</strong></span>}
+            {municipality && <span style={{ marginLeft: '4px' }}>municipality: <strong>"{municipality}"</strong></span>}
+            {tag && <span style={{ marginLeft: '4px' }}>tag: <strong>"{tag}"</strong></span>}
           </>
         )}
-      </Text>
+      </div>
         
       {searchResults && q && (
-        <Box border borderColor="green" bg="light" p={12} mt={12} mb={16}>
-          <Text size="small" weight={600} color="green" style={{ marginBottom: 6 }}>
+        <div style={{ 
+          border: '2px solid var(--green)', 
+          background: 'var(--light)', 
+          padding: '10px 12px', 
+          marginBottom: '16px' 
+        }}>
+          <div style={{ fontSize: '10px', fontWeight: 600, color: 'var(--green)', marginBottom: 6, textTransform: 'uppercase', letterSpacing: '0.5px' }}>
             Search matches found in:
-          </Text>
-          <Stack direction="row" gap={8} wrap>
+          </div>
+          <Stack direction="row" gap={6} wrap>
             {(() => {
               const matchCounts: Record<string, number> = {};
               Object.values(searchResults).forEach(result => {
@@ -255,13 +274,19 @@ export default function PlaquesRoute() {
               return Object.entries(matchCounts)
                 .sort((a, b) => b[1] - a[1])
                 .map(([field, count]) => (
-                  <Tag key={field} variant="default" style={{ backgroundColor: 'var(--white)' }} clickable={false}>
+                  <span key={field} style={{ 
+                    fontSize: '10px', 
+                    padding: '4px 8px', 
+                    background: 'var(--white)', 
+                    border: '1px solid var(--mid)',
+                    color: 'var(--dark)'
+                  }}>
                     {field}: {count}
-                  </Tag>
+                  </span>
                 ));
             })()}
           </Stack>
-        </Box>
+        </div>
       )}
       
       {plaques.length === 0 ? (
@@ -290,7 +315,7 @@ export default function PlaquesRoute() {
                 }}
               >
                 {p.imageUrl && (
-                  <Link to={`/plaques/${p.id}`} style={{ textDecoration: 'none' }}>
+                  <Link to={`/plaques/${p.id}`} prefetch='intent' style={{ textDecoration: 'none' }}>
                     <Image 
                       src={p.imageUrl} 
                       alt={p.title}
@@ -309,7 +334,7 @@ export default function PlaquesRoute() {
                   </div>
                 )}
                 
-                <Link to={`/plaques/${p.id}`} style={{ textDecoration: 'none' }}>
+                <Link to={`/plaques/${p.id}`} prefetch='intent' style={{ textDecoration: 'none' }}>
                   <h3 style={{ color: 'var(--green)', marginBottom: 8, cursor: 'pointer' }}>{p.title}</h3>
                 </Link>
                 
@@ -351,10 +376,11 @@ export default function PlaquesRoute() {
                       )}
                     </Stack>
                   )}
-                  
-                  <Button to={`/plaques/${p.id}`} style={{ width: '100%', textAlign: 'center', display: 'block' }}>
-                    Read Full Plaque →
-                  </Button>
+                  <Link to={`/plaques/${p.id}`} prefetch='intent' style={{ textDecoration: 'none' }}>  
+                    <Button style={{ width: '100%', textAlign: 'center', display: 'block' }}>
+                      Read Full Plaque →
+                    </Button>
+                  </Link>
                 </div>
               </Card>
             );

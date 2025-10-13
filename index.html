@@ -1,12 +1,48 @@
 <!doctype html>
-<html>
+<html lang="en" class="no-transitions">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Ontario Historical Plaques</title>
+    <style>
+      /* Prevent theme flash on initial load */
+      .no-transitions,
+      .no-transitions *,
+      .no-transitions *::before,
+      .no-transitions *::after {
+        transition: none !important;
+        animation: none !important;
+      }
+    </style>
+    <script>
+      // Apply theme immediately before any CSS loads to prevent flash
+      (function() {
+        // Read theme directly from cookie
+        const match = document.cookie.match('(^|;)\\s*theme\\s*=\\s*([^;]+)');
+        const theme = match ? match[2] : 'system';
+        
+        // Validate theme value
+        const validTheme = (theme === 'light' || theme === 'dark' || theme === 'system') ? theme : 'system';
+        
+        let resolvedTheme = validTheme;
+        
+        if (validTheme === 'system') {
+          resolvedTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        }
+        
+        document.documentElement.setAttribute('data-theme', resolvedTheme);
+        
+        // Re-enable transitions after a brief delay
+        requestAnimationFrame(function() {
+          requestAnimationFrame(function() {
+            document.documentElement.classList.remove('no-transitions');
+          });
+        });
+      })();
+    </script>
   </head>
   <body>
     <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
+    <script type="module" src="/src/entry.client.tsx"></script>
   </body>
 </html>
