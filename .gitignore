@@ -25,6 +25,16 @@ vite.svg
 .vscode/*
 !.vscode/extensions.json
 
+node_modules
+node_modules/*
+.vite
+dist
+build
+.react-router
+.devvars
+.mf
+
+
 # Env
 .env*
 !.env.example
