@@ -13,5 +13,5 @@
     "strict": true,
     "baseUrl": "."
   },
-  "include": ["src", "app"]
+  "include": ["src", "app", "vite.config.ts", "index.html"]
 }
