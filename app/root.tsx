@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import { 
   Links, 
   Meta, 
@@ -12,6 +12,7 @@ import type { MetaFunction } from 'react-router';
 import { buildMeta, SITE_NAME, DEFAULT_DESCRIPTION } from './lib/seo';
 import type { LoaderFunctionArgs } from 'react-router';
 import { Nav, Footer } from './components';
+import { ErrorBoundary, RootErrorBoundary } from './components/ErrorBoundary';
 import { getTheme, type Theme } from './lib/theme';
 import './styles.css';
 
@@ -118,16 +119,7 @@ export default function Root() {
   );
 }
 
-export function ErrorBoundary() {
-  const error = useRouteError();  
-  return (
-    <div className="container">
-      <h1>Error</h1>
-      <pre>{JSON.stringify(error, null, 2)}</pre>
-      <p>Sorry, an error occurred while loading the page.</p>
-    </div>
-  );
-}
+export { ErrorBoundary } from './components/ErrorBoundary';
 
 export const meta: MetaFunction = ({ location }) => {
   return buildMeta({

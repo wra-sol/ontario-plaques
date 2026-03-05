@@ -3,7 +3,7 @@ import type { ReactNode, CSSProperties } from 'react';
 interface TextProps {
   children: ReactNode;
   size?: 'small' | 'base' | 'large';
-  color?: 'dark' | 'mid' | 'green' | 'inherit';
+  color?: 'dark' | 'mid' | 'green' | 'inherit' | 'secondary';
   weight?: number;
   italic?: boolean;
   className?: string;
@@ -28,7 +28,11 @@ export function Text({
   }
   
   if (color && color !== 'inherit') {
-    computedStyle.color = `var(--${color})`;
+    if (color === 'secondary') {
+      computedStyle.color = 'var(--text-secondary)';
+    } else {
+      computedStyle.color = `var(--${color})`;
+    }
   }
   
   if (weight) {
