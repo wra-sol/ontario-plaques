@@ -561,6 +561,14 @@ img:hover {
   border-color: var(--accent);
 }
 
+/* Exclude Leaflet map tiles from border styling */
+.leaflet-container img,
+.leaflet-tile {
+  border: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
 /* Image loading animation */
 @keyframes shimmer {
   0% {
