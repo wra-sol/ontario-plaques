@@ -346,4 +346,173 @@ img {
   .hide-on-mobile {
     display: block;
   }
+}
+
+/* Responsive styles for small screens (320px+) */
+@media (max-width: 480px) {
+  /* Reduce container padding on very small screens */
+  .container { 
+    padding: 0 12px; 
+  }
+  
+  /* Scale down card padding */
+  .card {
+    padding: 12px;
+  }
+  
+  /* Adjust row layout for narrow screens */
+  .row {
+    grid-template-columns: 90px 1fr;
+    gap: 6px;
+    padding: 6px 0;
+    font-size: 14px;
+  }
+  
+  /* Reduce heading sizes */
+  h1 {
+    font-size: 1.5rem;
+  }
+  
+  h2 {
+    font-size: 1.1rem;
+  }
+  
+  h3 {
+    font-size: 1rem;
+  }
+  
+  /* Reduce main padding */
+  .main {
+    padding: 16px 0;
+  }
+  
+  /* Reduce nav padding */
+  .nav a {
+    padding: 12px 0;
+    font-size: 14px;
+  }
+  
+  /* Scale down brand */
+  .brand {
+    padding: 12px 0;
+    font-size: 14px;
+  }
+  
+  /* Reduce button padding */
+  .button {
+    padding: 8px 10px;
+    font-size: 12px;
+  }
+  
+  /* Adjust filter spacing */
+  .filter-card {
+    padding: 12px;
+  }
+}
+
+/* Extra responsive adjustments for 320px */
+@media (max-width: 360px) {
+  .container {
+    padding: 0 8px;
+  }
+  
+  .card {
+    padding: 10px;
+  }
+  
+  .row {
+    grid-template-columns: 80px 1fr;
+    font-size: 13px;
+  }
+  
+  h1 {
+    font-size: 1.3rem;
+  }
+  
+  /* Stack nav on ultra-narrow screens if needed */
+  .nav {
+    gap: 12px;
+  }
+  
+  .nav a {
+    font-size: 13px;
+  }
+}
+
+/* Specific fixes for plaque detail page responsive issues */
+@media (max-width: 480px) {
+  /* Fix text wrapping in location details */
+  .row {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
+  }
+  
+  .row div:last-child {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
+    line-height: 1.4;
+  }
+  
+  /* Ensure images scale properly */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Fix button wrapping on very small screens */
+  .button {
+    white-space: nowrap;
+    min-width: auto;
+  }
+  
+  /* Stack buttons vertically if needed */
+  .stack[data-direction="row"] {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  /* Ensure tags wrap properly */
+  .stack[data-direction="row"][data-wrap="true"] {
+    gap: 6px;
+  }
+  
+  /* Reduce tag padding on small screens */
+  .tag {
+    font-size: 12px;
+    padding: 4px 8px;
+  }
+}
+
+@media (max-width: 360px) {
+  /* Even more aggressive text wrapping for 320px */
+  .row {
+    grid-template-columns: 1fr;
+    gap: 4px;
+  }
+  
+  .row div:first-child {
+    font-weight: 600;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: var(--mid);
+  }
+  
+  .row div:last-child {
+    font-size: 13px;
+    line-height: 1.5;
+    word-break: break-word;
+  }
+  
+  /* Stack location hierarchy vertically */
+  .location-hierarchy {
+    display: block;
+  }
+  
+  /* Reduce spacing in stacks */
+  .stack {
+    gap: 8px;
+  }
 } 
