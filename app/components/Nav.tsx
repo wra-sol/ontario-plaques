@@ -15,6 +15,7 @@ export default function Nav({ theme }: NavProps) {
           <nav className="nav">
             <NavLink to="/" end prefetch="intent" className="hide-on-mobile">Home</NavLink>
             <NavLink to="/plaques" prefetch="intent" className="hide-on-mobile">Plaques</NavLink>
+            <NavLink to="/map" prefetch="intent" className="hide-on-mobile">Map</NavLink>
             <NavLink to="/about" prefetch="intent" className="hide-on-mobile">About</NavLink>
           </nav>
           <ThemeToggle theme={theme} />

@@ -2,7 +2,7 @@ import { Link, useLoaderData } from "react-router";
 import type { MetaFunction } from 'react-router';
 import { buildMeta } from '../lib/seo';
 import { fetchPlaques, type Plaque } from "../lib/plaques";
-import { Card, Box, Button, Tag, Stack, Image, Text } from "../components";
+import { Card, Box, Button, Tag, Stack, Image, Text, MiniMap } from "../components";
 
 // Helper function to strip common municipality prefixes
 function cleanMunicipalityName(name: string | null | undefined): string {
@@ -110,6 +110,14 @@ export default function PlaqueDetailRoute() {
       {(p.locationText || p.latitude != null) && (
         <Box border bg="light" p={20} mb={32} style={{ padding: 'clamp(12px, 4vw, 20px)' }}>
           <h3 style={{ fontSize: "clamp(1rem, 4vw, 1.1rem)", marginBottom: "16px", color: 'var(--green)' }}>Location Details</h3>
+          
+          {/* Mini Map */}
+          {p.latitude != null && p.longitude != null && (
+            <div style={{ marginBottom: 'var(--space-4)' }}>
+              <MiniMap plaque={p} height="200px" />
+            </div>
+          )}
+          
           <div className="list">
           
           {p.locationText && (

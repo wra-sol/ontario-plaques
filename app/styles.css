@@ -923,3 +923,63 @@ img:hover {
     border: var(--border-thin) solid #000;
   }
 }
+
+/* ==========================================================================
+   Leaflet Map Styles
+   ========================================================================== */
+.leaflet-container {
+  background: var(--bg-secondary);
+  font-family: inherit;
+}
+
+.leaflet-popup-content-wrapper {
+  border-radius: 0;
+  border: var(--border-thick) solid var(--border-primary);
+  box-shadow: var(--shadow-lg);
+}
+
+.leaflet-popup-content {
+  margin: var(--space-3);
+}
+
+.leaflet-popup-tip {
+  background: var(--border-primary);
+}
+
+.leaflet-popup-close-button {
+  color: var(--text-primary);
+  font-size: 20px;
+  padding: var(--space-2);
+}
+
+.leaflet-popup-close-button:hover {
+  color: var(--accent);
+}
+
+.leaflet-control-zoom a {
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  border: var(--border-base) solid var(--border-primary);
+  border-radius: 0 !important;
+}
+
+.leaflet-control-zoom a:hover {
+  background: var(--bg-secondary);
+  color: var(--accent);
+}
+
+.leaflet-control-attribution {
+  background: rgba(255, 255, 255, 0.8) !important;
+  font-size: 10px;
+  padding: 2px 5px;
+}
+
+[data-theme="dark"] .leaflet-control-attribution {
+  background: rgba(30, 30, 30, 0.8) !important;
+  color: var(--text-primary);
+}
+
+.plaque-marker {
+  filter: hue-rotate(100deg) saturate(1.5);
+}
+

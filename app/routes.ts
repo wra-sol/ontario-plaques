@@ -4,6 +4,7 @@ export default [
   index("routes/_index.tsx"),
   route("plaques", "routes/plaques.tsx"),
   route("plaques/:id", "routes/plaques.$id.tsx"),
+  route("map", "routes/map.tsx"),
   route("about", "routes/about.tsx"),
   route("theme", "routes/theme.tsx"),
 ] satisfies RouteConfig;
