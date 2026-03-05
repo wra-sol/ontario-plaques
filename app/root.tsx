@@ -5,14 +5,14 @@ import {
   Outlet, 
   Scripts, 
   ScrollRestoration, 
-  useLoaderData, 
-  useRouteError
+  useLoaderData
 } from 'react-router';
 import type { MetaFunction } from 'react-router';
 import { buildMeta, SITE_NAME, DEFAULT_DESCRIPTION } from './lib/seo';
 import type { LoaderFunctionArgs } from 'react-router';
 import { Nav, Footer } from './components';
-import { ErrorBoundary, RootErrorBoundary } from './components/ErrorBoundary';
+import { ErrorBoundary } from './components/ErrorBoundary';
+import { SkipLink, ScrollToTop } from './components/Accessibility';
 import { getTheme, type Theme } from './lib/theme';
 import './styles.css';
 
@@ -108,13 +108,15 @@ export default function Root() {
   
   return (
     <div className="app">
+      <SkipLink />
       <Nav theme={theme} />
-      <main className="main" style={{ minHeight: '90vh' }}>
+      <main id="main-content" className="main" style={{ minHeight: '90vh' }}>
         <div className="container">
           <Outlet />
         </div>
       </main>
       <Footer />
+      <ScrollToTop />
     </div>
   );
 }
