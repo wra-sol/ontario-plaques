@@ -268,7 +268,7 @@ export default function PlaquesRoute() {
                 name="q"
                 defaultValue={searchParams.get('q') ?? ''}
                 placeholder="Search by title, location, topics, or plaque text..."
-                style={{ width: '100%', fontSize: '13px', padding: '7px 8px', border: '2px solid var(--dark)' }}
+                style={{ width: '100%' }}
                 onChange={(e) => {
                   const form = e.currentTarget.form;
                   if (form) {
@@ -329,7 +329,7 @@ export default function PlaquesRoute() {
                     if (form) submit(form, { replace: true });
                   }}
                   className="input"
-                  style={{ width: '100%', padding: '7px 8px', border: '2px solid var(--dark)', background: 'var(--white)', color: 'var(--dark)' }}
+                  style={{ width: '100%' }}
                 >
                   {q && <option value="relevance">Relevance</option>}
                   <option value="title_asc">Title (A–Z)</option>
@@ -351,7 +351,7 @@ export default function PlaquesRoute() {
                     if (form) submit(form, { replace: true });
                   }}
                   className="input"
-                  style={{ width: '100%', padding: '7px 8px', border: '2px solid var(--dark)', background: 'var(--white)', color: 'var(--dark)' }}
+                  style={{ width: '100%' }}
                 >
                   <option value="12">12</option>
                   <option value="24">24</option>
