@@ -1,5 +1,15 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none">
-  <title>Site Icon</title>
-  <rect x="6" y="10" width="52" height="44" rx="10" fill="#0e5135" stroke="#f0c419" stroke-width="4"/>
-  <circle cx="32" cy="32" r="5" fill="#f0c419"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+  <title>Ontario Historical Plaques</title>
+  <desc>A green rectangular plaque with Ontario's symbol</desc>
+  <!-- Background plaque shape - Ontario historical plaque style -->
+  <rect x="4" y="8" width="56" height="48" fill="#198f3a" stroke="#1a1a1a" stroke-width="3"/>
+  <!-- Inner border -->
+  <rect x="10" y="14" width="44" height="36" fill="none" stroke="#ffffff" stroke-width="2" opacity="0.9"/>
+  <!-- Crown symbol (Ontario emblem) -->
+  <g transform="translate(32, 32)" fill="#ffffff">
+    <path d="M-12 -8 L-8 -12 L-4 -8 L0 -12 L4 -8 L8 -12 L12 -8 L12 8 L-12 8 Z" opacity="0.9"/>
+    <rect x="-2" y="-4" width="4" height="10" fill="#198f3a"/>
+  </g>
+  <!-- Ontario text -->
+  <text x="32" y="54" text-anchor="middle" font-family="system-ui, sans-serif" font-size="6" font-weight="600" fill="#ffffff" letter-spacing="0.5">ONTARIO</text>
 </svg>
