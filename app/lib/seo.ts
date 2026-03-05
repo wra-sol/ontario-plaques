@@ -15,7 +15,7 @@ export const DEFAULT_DESCRIPTION =
 export const DEFAULT_OG_IMAGE = '/favicon.svg'; // Fallback OG image
 
 // Set your production site URL - can be overridden with VITE_SITE_URL env var
-export const SITE_URL = import.meta.env.VITE_SITE_URL as string | undefined || 
+export const SITE_URL = (import.meta as any).env?.VITE_SITE_URL as string | undefined || 
   (typeof window !== 'undefined' ? window.location.origin : undefined);
 
 function absolutize(urlOrPath: string | undefined): string | undefined {

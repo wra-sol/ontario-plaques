@@ -1,4 +1,4 @@
-import { Link, Form, useLoaderData, useSearchParams, useSubmit } from 'react-router-dom';
+import { Link, Form, useLoaderData, useSearchParams, useSubmit } from 'react-router';
 import type { MetaFunction } from 'react-router';
 import { buildMeta } from '../lib/seo';
 import type { ReactNode } from 'react';

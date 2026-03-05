@@ -11,7 +11,7 @@
     "jsx": "react-jsx",
     "strict": true,
     "baseUrl": ".",
-    "types": ["@cloudflare/workers-types", "@react-router/dev"]
+    "types": ["@cloudflare/workers-types"]
   },
-  "include": ["app/**/*", "src/**/*", "react-router.config.ts"]
+  "include": ["app/**/*", "react-router.config.ts"]
 }

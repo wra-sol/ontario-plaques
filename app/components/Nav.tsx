@@ -1,4 +1,4 @@
-import { Link, NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router';
 import ThemeToggle from './ThemeToggle';
 import type { Theme } from '../lib/theme';
 

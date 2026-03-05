@@ -1,4 +1,4 @@
-import { Link, useLoaderData } from "react-router-dom";
+import { Link, useLoaderData } from "react-router";
 import type { MetaFunction } from 'react-router';
 import { buildMeta } from '../lib/seo';
 import { fetchPlaques, type Plaque } from "../lib/plaques";
