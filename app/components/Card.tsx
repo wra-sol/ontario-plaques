@@ -5,13 +5,21 @@ interface CardProps {
   as?: 'div' | 'section' | 'article' | 'aside';
   className?: string;
   style?: React.CSSProperties;
+  hoverable?: boolean;
 }
 
-export function Card({ children, as: Component = 'div', className = '', style = {} }: CardProps) {
+export function Card({ 
+  children, 
+  as: Component = 'div', 
+  className = '', 
+  style = {},
+  hoverable = false 
+}: CardProps) {
+  const combinedClassName = `card ${hoverable ? 'hoverable' : ''} ${className}`.trim();
+  
   return (
-    <Component className={`card ${className}`.trim()} style={style}>
+    <Component className={combinedClassName} style={style}>
       {children}
     </Component>
   );
 }
-

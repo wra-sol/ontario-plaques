@@ -1,3 +1,4 @@
+import { useState, useCallback } from 'react';
 import type { CSSProperties } from 'react';
 
 interface ImageProps {
@@ -14,12 +15,15 @@ interface ImageProps {
   quality?: number; // 1-100, default 85
   format?: 'auto' | 'webp' | 'avif' | 'jpeg' | 'png';
   fit?: 'scale-down' | 'contain' | 'cover' | 'crop' | 'pad';
+  // Loading state
+  showSkeleton?: boolean;
 }
 
 /**
- * Optimized Image Component
+ * Optimized Image Component with Loading State
  * 
  * This component intelligently handles image loading:
+ * - Shows skeleton loading state while image loads
  * - Uses local images from /images/ when available (development/local)
  * - Falls back to Cloudflare Image Resizing for optimization when online
  * - Supports various optimization parameters
@@ -39,17 +43,32 @@ export function Image({
   optimize = true,
   quality = 85,
   format = 'auto',
-  fit = 'scale-down'
+  fit = 'scale-down',
+  showSkeleton = true
 }: ImageProps) {
+  const [isLoading, setIsLoading] = useState(true);
+  const [hasError, setHasError] = useState(false);
+
+  const handleLoad = useCallback(() => {
+    setIsLoading(false);
+  }, []);
+
+  const handleError = useCallback(() => {
+    setIsLoading(false);
+    setHasError(true);
+  }, []);
+
   const computedStyle: CSSProperties = {
     width,
-    height,
+    height: typeof height === 'number' ? `${height}px` : height,
     objectFit,
+    opacity: isLoading ? 0 : 1,
+    transition: 'opacity 250ms ease',
     ...style
   };
   
   if (border) {
-    computedStyle.border = '3px solid var(--dark)';
+    computedStyle.border = 'var(--border-thick) solid var(--border-primary)';
   }
 
   // Generate optimized image URL
@@ -60,15 +79,60 @@ export function Image({
     fit,
     width: typeof width === 'number' ? width : undefined
   });
+
+  // Calculate aspect ratio for skeleton
+  const aspectRatio = typeof width === 'number' && typeof height === 'number' 
+    ? width / height 
+    : undefined;
+  
+  const skeletonStyle: CSSProperties = {
+    position: 'absolute',
+    top: 0,
+    left: 0,
+    width: '100%',
+    height: '100%',
+    aspectRatio: aspectRatio ? String(aspectRatio) : '16/9',
+  };
   
   return (
-    <img 
-      src={optimizedSrc} 
-      alt={alt} 
-      className={className}
-      style={computedStyle}
-      loading="lazy"
-    />
+    <div style={{ position: 'relative', width, height: computedStyle.height }}>
+      {showSkeleton && isLoading && (
+        <div 
+          className="skeleton skeleton-image" 
+          style={skeletonStyle}
+          aria-hidden="true"
+        />
+      )}
+      {hasError ? (
+        <div 
+          style={{
+            ...computedStyle,
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            background: 'var(--bg-secondary)',
+            color: 'var(--text-secondary)',
+            fontSize: 'var(--text-sm)',
+            minHeight: '200px',
+          }}
+          role="img"
+          aria-label={`Failed to load: ${alt}`}
+        >
+          <span>Image unavailable</span>
+        </div>
+      ) : (
+        <img 
+          src={optimizedSrc} 
+          alt={alt} 
+          className={className}
+          style={computedStyle}
+          loading="lazy"
+          decoding="async"
+          onLoad={handleLoad}
+          onError={handleError}
+        />
+      )}
+    </div>
   );
 }
 
@@ -170,4 +234,3 @@ function getCloudflareOptimizedUrl(src: string, options: OptimizationOptions): s
   // Return Cloudflare Image Resizing URL
   return `/cdn-cgi/image/${optionsString}/${src}`;
 }
-

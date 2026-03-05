@@ -1,11 +1,13 @@
+import { Link } from "react-router";
 import type { ReactNode, CSSProperties } from "react";
 
 interface TagProps {
   children: ReactNode;
-  variant?: "default" | "solid" | "match";
+  variant?: "default" | "solid";
   className?: string;
   style?: CSSProperties;
   clickable?: boolean;
+  to?: string;
 }
 
 export function Tag({
@@ -14,80 +16,30 @@ export function Tag({
   className = "",
   style = {},
   clickable = true,
+  to,
 }: TagProps) {
-  const baseStyle: React.CSSProperties = {
-    fontSize: "0.75rem",
-    padding: "4px 10px",
-    fontWeight: 500,
-    textTransform: "uppercase",
-    display: "inline-block",
-  };
+  const baseClasses = "tag";
+  const variantClasses = variant === "solid" ? "solid" : "";
+  const combinedClasses = `${baseClasses} ${variantClasses} ${className}`.trim();
 
-  let variantStyle: React.CSSProperties = {};
-  let hoverStyle: React.CSSProperties = {};
-
-  switch (variant) {
-    case "solid":
-      variantStyle = {
-        backgroundColor: "var(--green)",
-        color: "var(--white)",
-        fontWeight: 600,
-        letterSpacing: "0.5px",
-      };
-      break;
-    case "match":
-      variantStyle = {
-        backgroundColor: "var(--green)",
-        color: "var(--white)",
-        fontWeight: 600,
-        letterSpacing: "0.5px",
-      };
-      break;
-    case "default":
-    default:
-      variantStyle = {
-        backgroundColor: "var(--light)",
-        border: "2px solid var(--green)",
-        color: "var(--green)",
-      };
-  }
-
-  const tagContent = (
-    <span
-      className={className}
-      style={{ ...baseStyle, ...variantStyle, ...style }}
-    >
+  const content = (
+    <span className={combinedClasses} style={style}>
       #{children}
     </span>
   );
 
   if (clickable) {
+    const href = to || `/plaques?tag=${encodeURIComponent(String(children))}`;
     return (
-      <a 
-        href={`/plaques?tag=${children}`}
-        style={{
-          textDecoration: "none",
-          display: "inline-block",
-        }}
-        onMouseEnter={(e) => {
-          const span = e.currentTarget.querySelector('span');
-          if (span && variant === "default") {
-            span.style.backgroundColor = "var(--green)";
-            span.style.color = "var(--white)";
-          }
-        }}
-        onMouseLeave={(e) => {
-          const span = e.currentTarget.querySelector('span');
-          if (span && variant === "default") {
-            span.style.backgroundColor = "var(--light)";
-            span.style.color = "var(--green)";
-          }
-        }}
+      <Link 
+        to={href}
+        style={{ textDecoration: "none", display: "inline-block" }}
+        aria-label={`Filter by tag: ${children}`}
       >
-        {tagContent}
-      </a>
+        {content}
+      </Link>
     );
   }
 
-  return tagContent;
+  return content;
 }
